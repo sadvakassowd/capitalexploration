@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CAPITAL EXPLORATION — консалтинг в сфере недропользования</title>
   <meta name="description" content="CAPITAL EXPLORATION — лицензирование, проектирование, отчётность и сопровождение проектов недропользования в Казахстане." />
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body>
 
@@ -94,10 +94,13 @@
 
           <label class="field">
             <span data-i18n="form_message">Сообщение</span>
-            <textarea name="msg" data-i18n-placeholder="form_message_ph" placeholder="Коротко опишите задачу"></textarea>
+            <textarea name="message" data-i18n-placeholder="form_message_ph" placeholder="Коротко опишите задачу"></textarea>
           </label>
 
+          <input type="hidden" name="reply_to" value="zhanat.tuleubaev@mail.ru">
+
           <button class="btn btn--primary btn--full" type="submit" data-i18n="form_submit">Отправить запрос</button>
+          <p class="hint">zhanat.tuleubaev@mail.ru</p>
         </form>
       </div>
     </div>
@@ -140,7 +143,7 @@
 
         <div class="card">
           <h3 data-i18n="service6_title">Подсчёт запасов</h3>
-          <p data-i18n="service6_text">Подсчёт запасов в соответствии с требованиями Кодекса KAZRC и CIG.</p>
+          <p data-i18n="service6_text">Подсчёт запасов в соответствии с требованиями Кодекса JORC, KAZRC и CIG.</p>
         </div>
 
         <div class="card">
@@ -227,6 +230,8 @@
     <div class="container footer__inner">
       <div>© <span id="year"></span> CAPITAL EXPLORATION</div>
       <div class="footer__contacts">
+        <span>+7 XXX XXX XX XX</span>
+        <span>info@capitalexploration.kz</span>
         <span data-i18n="footer_country">Казахстан</span>
       </div>
     </div>
@@ -235,8 +240,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  emailjs.init("ВСТАВЬ_СЮДА_PUBLIC_KEY");
+  emailjs.init({
+    publicKey: "ВСТАВЬ_СЮДА_PUBLIC_KEY",
+    blockHeadless: true,
+    limitRate: {
+      id: "capital-exploration-site",
+      throttle: 10000
+    }
+  });
 </script>
-<script src="app.js?v=12"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>

@@ -1,106 +1,7 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const TELEGRAM_BOT_TOKEN = "8745289526:AAGYs9y4WTd6NPURS9Nx5szBf6GWm0Nabkg";
-const TELEGRAM_CHAT_ID = "1304471081";
-
-function isEmailEnabled() {
-  return (
-    typeof emailjs !== "undefined" &&
-    EMAILJS_SERVICE_ID &&
-    EMAILJS_TEMPLATE_ID &&
-    EMAILJS_SERVICE_ID !== "ВСТАВЬ_СЮДА_SERVICE_ID" &&
-    EMAILJS_TEMPLATE_ID !== "ВСТАВЬ_СЮДА_TEMPLATE_ID"
-  );
-}
-
-async function sendToTelegram(text) {
-  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-  const payload = {
-    chat_id: TELEGRAM_CHAT_ID,
-    text,
-    parse_mode: "HTML",
-  };
-
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-
-  if (!res.ok) {
-    const t = await res.text();
-    throw new Error(t);
-  }
-}
-
-async function sendToEmail(data) {
-  if (!isEmailEnabled()) {
-    return;
-  }
-
-function formatLead(form) {
-  const fd = new FormData(form);
-  const rows = [];
-
-  for (const [k, v] of fd.entries()) {
-    const val = String(v || "").trim();
-    if (val) rows.push(`<b>${k.toUpperCase()}:</b> ${val}`);
-  }
-
-  return `<b>Заявка с сайта CAPITAL EXPLORATION</b>\n\n${rows.join("\n")}`;
-}
-
-function formToObject(form) {
-  const fd = new FormData(form);
-  return {
-    name: fd.get("name") || "",
-    phone: fd.get("phone") || "",
-    need: fd.get("need") || "",
-    msg: fd.get("msg") || ""
-  };
-}
-
-const leadForm = document.getElementById("leadForm");
-
-if (leadForm) {
-  leadForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    try {
-      const telegramMessage = formatLead(leadForm);
-      const formData = formToObject(leadForm);
-
-      // Сначала обязательно Telegram
-      await sendToTelegram(telegramMessage);
-
-      // Email — отдельно, чтобы не ломал успешную отправку в Telegram
-      try {
-        await sendToEmail(formData);
-      } catch (emailErr) {
-        console.warn("Email send failed:", emailErr);
-      }
-
-      alert(
-        currentLang === "ru"
-          ? "Заявка отправлена ✅"
-          : currentLang === "en"
-          ? "Request sent ✅"
-          : "Сұраныс жіберілді ✅"
-      );
-
-      leadForm.reset();
-    } catch (err) {
-      console.error(err);
-      alert(
-        currentLang === "ru"
-          ? "Ошибка отправки ❌ Проверь Telegram настройки"
-          : currentLang === "en"
-          ? "Send error ❌ Check Telegram settings"
-          : "Жіберу қатесі ❌ Telegram баптауларын тексеріңіз"
-      );
-    }
-  });
-}
+const EMAILJS_SERVICE_ID = "service_ktatykj";
+const EMAILJS_TEMPLATE_ID = "template_zb8eptdD";
 
 const i18n = {
   ru: {
@@ -158,7 +59,7 @@ const i18n = {
     service5_title: "Рекультивация и ликвидация",
     service5_text: "Проектирование рекультивации и ликвидации объектов недропользования.",
     service6_title: "Подсчёт запасов",
-    service6_text: "Подсчёт запасов в соответствии с требованиями Кодекса KAZRC и CIG.",
+    service6_text: "Подсчёт запасов в соответствии с требованиями Кодекса JORC, KAZRC и CIG.",
     service7_title: "Аукционы по недропользованию",
     service7_text: "Подготовка документации для участия в аукционах по недропользованию.",
     service8_title: "Отчётность недропользования",
@@ -189,7 +90,9 @@ const i18n = {
     faq4_title: "Работаете ли вы с индивидуальными задачами?",
     faq4_text: "Да. Мы рассматриваем как типовые услуги, так и нестандартные задачи в рамках сопровождения недропользования и проектной документации.",
 
-    footer_country: "Казахстан"
+    footer_country: "Казахстан",
+    send_success: "Заявка отправлена ✅",
+    send_error: "Ошибка отправки ❌ Проверь настройки EmailJS"
   },
 
   en: {
@@ -247,7 +150,7 @@ const i18n = {
     service5_title: "Reclamation and Closure",
     service5_text: "Engineering of reclamation and closure projects for subsoil use facilities.",
     service6_title: "Resource Estimation",
-    service6_text: "Resource estimation in accordance with KAZRC and CIG requirements.",
+    service6_text: "Resource estimation in accordance with JORC, KAZRC and CIG requirements.",
     service7_title: "Subsoil Auctions",
     service7_text: "Preparation of documentation for participation in subsoil use auctions.",
     service8_title: "Regulatory Reporting",
@@ -278,7 +181,9 @@ const i18n = {
     faq4_title: "Do you handle custom tasks?",
     faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
 
-    footer_country: "Kazakhstan"
+    footer_country: "Kazakhstan",
+    send_success: "Request sent ✅",
+    send_error: "Send error ❌ Check EmailJS settings"
   },
 
   kz: {
@@ -336,7 +241,7 @@ const i18n = {
     service5_title: "Рекультивация және жою",
     service5_text: "Жер қойнауын пайдалану объектілерін рекультивациялау және жою жобаларын әзірлеу.",
     service6_title: "Қорларды есептеу",
-    service6_text: "KAZRC және CIG кодексі талаптарына сәйкес қорларды есептеу.",
+    service6_text: "JORC, KAZRC және CIG кодексі талаптарына сәйкес қорларды есептеу.",
     service7_title: "Жер қойнауын пайдалану аукциондары",
     service7_text: "Жер қойнауын пайдалану аукциондарына қатысуға арналған құжаттаманы дайындау.",
     service8_title: "Жер қойнауын пайдалану есептілігі",
@@ -367,17 +272,19 @@ const i18n = {
     faq4_title: "Жеке міндеттермен жұмыс істейсіздер ме?",
     faq4_text: "Иә. Біз жер қойнауын пайдалану мен жобалық құжаттаманы сүйемелдеу шеңберінде типтік те, стандартты емес те міндеттерді қараймыз.",
 
-    footer_country: "Қазақстан"
+    footer_country: "Қазақстан",
+    send_success: "Сұраныс жіберілді ✅",
+    send_error: "Жіберу қатесі ❌ EmailJS баптауларын тексеріңіз"
   }
 };
 
 let currentLang = "ru";
 
-function applyLanguage(lang){
+function applyLanguage(lang) {
   currentLang = lang;
   document.documentElement.lang = lang;
 
-  document.querySelectorAll("[data-i18n]").forEach(el => {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
     if (!(key in i18n[lang])) return;
 
@@ -388,7 +295,7 @@ function applyLanguage(lang){
     }
   });
 
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
     const key = el.dataset.i18nPlaceholder;
     if (!(key in i18n[lang])) return;
     el.placeholder = i18n[lang][key];
@@ -402,5 +309,21 @@ function applyLanguage(lang){
 document.getElementById("btnRu").addEventListener("click", () => applyLanguage("ru"));
 document.getElementById("btnEn").addEventListener("click", () => applyLanguage("en"));
 document.getElementById("btnKz").addEventListener("click", () => applyLanguage("kz"));
+
+const leadForm = document.getElementById("leadForm");
+if (leadForm) {
+  leadForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    try {
+      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, leadForm);
+      alert(i18n[currentLang].send_success);
+      leadForm.reset();
+    } catch (err) {
+      console.error(err);
+      alert(i18n[currentLang].send_error);
+    }
+  });
+}
 
 applyLanguage("ru");

@@ -10,9 +10,12 @@
 
 *{box-sizing:border-box}
 html,body{height:100%}
-html,body{overflow-x:hidden}
-
+html{
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
 body{
+  overflow-x:hidden;
   margin:0;
   color:var(--text);
   font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -31,8 +34,8 @@ a{color:inherit;text-decoration:none}
 /* ---------- TOPBAR ---------- */
 
 .topbar{
-  position:sticky;
-  top:0;
+  position:relative;
+  top:auto;
   z-index:20;
   background:rgba(0,0,0,.55);
   backdrop-filter:blur(12px);
@@ -70,8 +73,6 @@ a{color:inherit;text-decoration:none}
   font-weight:600;
   letter-spacing:2px;
   white-space:nowrap;
-  overflow:visible;
-  text-overflow:clip;
 }
 
 .nav{
@@ -330,6 +331,7 @@ input:focus,select:focus,textarea:focus{
 .section{
   padding:42px 0;
   background:transparent;
+  scroll-margin-top:24px;
 }
 
 .section--alt{
@@ -502,9 +504,9 @@ input:focus,select:focus,textarea:focus{
 @media (max-width: 1024px){
   .topbar__inner{
     min-height:auto;
-    padding:10px 0 12px;
+    padding:14px 0 16px;
     flex-wrap:wrap;
-    gap:8px;
+    gap:14px;
   }
 
   .nav{
@@ -514,50 +516,32 @@ input:focus,select:focus,textarea:focus{
   .brand{
     width:100%;
     height:auto;
-    gap:10px;
-    margin-bottom:0;
+    gap:12px;
   }
 
   .brand img{
-    width:110px;
+    width:140px;
     height:auto;
   }
 
   .brand span{
-    font-size:13px;
-    letter-spacing:1.6px;
+    font-size:14px;
+    letter-spacing:1.3px;
   }
 
   .topbar__actions{
     width:100%;
     justify-content:space-between;
     margin-left:0;
-    margin-top:-2px;
-    gap:10px;
-  }
-
-  .lang-switch{
-    padding:3px;
-    gap:4px;
-  }
-
-  .lang-btn{
-    padding:7px 9px;
-    font-size:13px;
-  }
-
-  .topbar__cta{
-    padding:10px 14px;
-    font-size:14px;
   }
 
   .hero{
-    padding:28px 0 28px;
+    padding:34px 0 28px;
   }
 
   .hero__grid{
     grid-template-columns:1fr;
-    gap:20px;
+    gap:24px;
   }
 
   .hero__left{
@@ -596,42 +580,9 @@ input:focus,select:focus,textarea:focus{
     padding:0 16px;
   }
 
-  .topbar__inner{
-    padding:8px 0 10px;
-    gap:6px;
-  }
-
-  .brand{
-    gap:8px;
-  }
-
-  .brand img{
-    width:96px;
-    height:auto;
-  }
-
-  .brand span{
-    font-size:12px;
-    letter-spacing:1.4px;
-  }
-
-  .topbar__actions{
-    margin-top:-4px;
-    gap:8px;
-  }
-
-  .lang-switch{
-    padding:3px;
-  }
-
-  .lang-btn{
-    padding:6px 8px;
-    font-size:12px;
-  }
-
   .topbar__cta{
-    padding:9px 12px;
-    font-size:13px;
+    padding:10px 14px;
+    font-size:14px;
   }
 
   .h1{
