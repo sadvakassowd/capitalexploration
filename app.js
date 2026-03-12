@@ -1,9 +1,17 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-document.getElementById("year").textContent = new Date().getFullYear();
-
 const TELEGRAM_BOT_TOKEN = "8745289526:AAGYs9y4WTd6NPURS9Nx5szBf6GWm0Nabkg";
 const TELEGRAM_CHAT_ID = "1304471081";
+
+function isEmailEnabled() {
+  return (
+    typeof emailjs !== "undefined" &&
+    EMAILJS_SERVICE_ID &&
+    EMAILJS_TEMPLATE_ID &&
+    EMAILJS_SERVICE_ID !== "ВСТАВЬ_СЮДА_SERVICE_ID" &&
+    EMAILJS_TEMPLATE_ID !== "ВСТАВЬ_СЮДА_TEMPLATE_ID"
+  );
+}
 
 async function sendToTelegram(text) {
   const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
@@ -26,22 +34,19 @@ async function sendToTelegram(text) {
 }
 
 async function sendToEmail(data) {
-  return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-    name: data.name || "",
-    phone: data.phone || "",
-    need: data.need || "",
-    message: data.msg || "",
-    to_email: "zhanat.tuleubaev@mail.ru"
-  });
-}
+  if (!isEmailEnabled()) {
+    return;
+  }
 
 function formatLead(form) {
   const fd = new FormData(form);
   const rows = [];
+
   for (const [k, v] of fd.entries()) {
     const val = String(v || "").trim();
     if (val) rows.push(`<b>${k.toUpperCase()}:</b> ${val}`);
   }
+
   return `<b>Заявка с сайта CAPITAL EXPLORATION</b>\n\n${rows.join("\n")}`;
 }
 
@@ -56,6 +61,7 @@ function formToObject(form) {
 }
 
 const leadForm = document.getElementById("leadForm");
+
 if (leadForm) {
   leadForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -64,10 +70,15 @@ if (leadForm) {
       const telegramMessage = formatLead(leadForm);
       const formData = formToObject(leadForm);
 
-      await Promise.all([
-        sendToTelegram(telegramMessage),
-        sendToEmail(formData)
-      ]);
+      // Сначала обязательно Telegram
+      await sendToTelegram(telegramMessage);
+
+      // Email — отдельно, чтобы не ломал успешную отправку в Telegram
+      try {
+        await sendToEmail(formData);
+      } catch (emailErr) {
+        console.warn("Email send failed:", emailErr);
+      }
 
       alert(
         currentLang === "ru"
@@ -76,15 +87,16 @@ if (leadForm) {
           ? "Request sent ✅"
           : "Сұраныс жіберілді ✅"
       );
+
       leadForm.reset();
     } catch (err) {
       console.error(err);
       alert(
         currentLang === "ru"
-          ? "Ошибка отправки ❌ Проверь Telegram и EmailJS настройки"
+          ? "Ошибка отправки ❌ Проверь Telegram настройки"
           : currentLang === "en"
-          ? "Send error ❌ Check Telegram and EmailJS settings"
-          : "Жіберу қатесі ❌ Telegram және EmailJS баптауларын тексеріңіз"
+          ? "Send error ❌ Check Telegram settings"
+          : "Жіберу қатесі ❌ Telegram баптауларын тексеріңіз"
       );
     }
   });
