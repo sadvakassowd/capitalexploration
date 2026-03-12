@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAPITAL EXPLORATION — консалтинг в сфере недропользования</title>
+  <meta name="description" content="CAPITAL EXPLORATION — лицензирование, проектирование, отчётность и сопровождение проектов недропользования в Казахстане." />
+  <link rel="stylesheet" href="styles.css?v=12" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="CAPITAL EXPLORATION">
+      <span>CAPITAL EXPLORATION</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#services" data-i18n="nav_services">Услуги</a>
+      <a href="#about" data-i18n="nav_about">О компании</a>
+      <a href="#team" data-i18n="nav_team">О команде</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <div class="lang-switch">
+        <button class="lang-btn is-active" id="btnRu" type="button">RU</button>
+        <button class="lang-btn" id="btnEn" type="button">EN</button>
+        <button class="lang-btn" id="btnKz" type="button">KZ</button>
+      </div>
+      <a class="btn btn--primary topbar__cta" href="#quick-request" data-i18n="nav_cta">Получить консультацию</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__left">
+        <div class="chip" data-i18n="hero_chip">Консалтинг • Недропользование • Казахстан</div>
+
+        <h1 class="h1" data-i18n="hero_title">
+          Комплексное сопровождение проектов&nbsp;<br>в сфере недропользования
+        </h1>
+
+        <p class="lead" data-i18n="hero_text">
+          Лицензирование, проектирование, отчётность, экологическая и промышленная документация —
+          от подготовки документов до запуска работ.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn--primary" href="#services" data-i18n="hero_btn_services">Наши услуги</a>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi"><b data-i18n="kpi1_title">Под ключ</b><span data-i18n="kpi1_text">от лицензии до запуска работ</span></div>
+          <div class="kpi"><b data-i18n="kpi2_title">ТПИ / ОПИ</b><span data-i18n="kpi2_text">разведка, добыча, старательство</span></div>
+          <div class="kpi"><b data-i18n="kpi3_title">Сопровождение</b><span data-i18n="kpi3_text">документы, проекты, отчётность</span></div>
+        </div>
+
+        <div class="kpis kpis--second">
+          <div class="kpi"><b data-i18n="kpi4_title">Фокус</b><span data-i18n="kpi4_text">недропользование и горное проектирование</span></div>
+          <div class="kpi"><b data-i18n="kpi5_title">Подход</b><span data-i18n="kpi5_text">структурированная работа по этапам</span></div>
+          <div class="kpi"><b data-i18n="kpi6_title">Результат</b><span data-i18n="kpi6_text">понятные сроки и прозрачный процесс</span></div>
+        </div>
+      </div>
+
+      <div class="panel" id="quick-request">
+        <div class="panel__title" data-i18n="form_title">Быстрый запрос</div>
+
+        <form class="form" id="leadForm">
+          <label class="field">
+            <span data-i18n="form_name">Имя / компания</span>
+            <input name="name" data-i18n-placeholder="form_name_ph" placeholder="Например: ТОО …" required>
+          </label>
+
+          <label class="field">
+            <span data-i18n="form_phone">Телефон / WhatsApp</span>
+            <input name="phone" data-i18n-placeholder="form_phone_ph" placeholder="+7 …" required>
+          </label>
+
+          <label class="field">
+            <span data-i18n="form_need">Что требуется</span>
+            <select name="need" required>
+              <option value="" data-i18n="form_select">Выбрать…</option>
+              <option data-i18n="need_license">Лицензирование</option>
+              <option data-i18n="need_design">Проектирование</option>
+              <option data-i18n="need_reports">Отчётность</option>
+              <option data-i18n="need_env">Экология / промышленная безопасность</option>
+              <option data-i18n="need_full">Комплексное сопровождение</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span data-i18n="form_message">Сообщение</span>
+            <textarea name="msg" data-i18n-placeholder="form_message_ph" placeholder="Коротко опишите задачу"></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--full" type="submit" data-i18n="form_submit">Отправить запрос</button>
+          <p class="hint">zhanat.tuleubaev@mail.ru</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero__bg" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2" data-i18n="services_title">Наши услуги</h2>
+        <p class="muted" data-i18n="services_subtitle">Профессиональные решения для проектов в сфере недропользования.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="service1_title">Оформление и получение лицензий</h3>
+          <p data-i18n="service1_text">Оформление и получение лицензий на разведку и добычу ТПИ, ОПИ и старательство.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service2_title">Возврат лицензионных территорий</h3>
+          <p data-i18n="service2_text">Сопровождение процедур возврата лицензионных территорий.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service3_title">Планы разведки и горных работ</h3>
+          <p data-i18n="service3_text">Разработка планов разведки, планов горных работ и рабочих программ к контрактам на разведку и добычу полезных ископаемых.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service4_title">Проектирование объектов</h3>
+          <p data-i18n="service4_text">Проектирование хвостохранилищ и разработки техногенных минеральных образований (ТМО).</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service5_title">Рекультивация и ликвидация</h3>
+          <p data-i18n="service5_text">Проектирование рекультивации и ликвидации объектов недропользования.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service6_title">Подсчёт запасов</h3>
+          <p data-i18n="service6_text">Подсчёт запасов в соответствии с требованиями Кодекса KAZRC и CIG.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service7_title">Аукционы по недропользованию</h3>
+          <p data-i18n="service7_text">Подготовка документации для участия в аукционах по недропользованию.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service8_title">Отчётность недропользования</h3>
+          <p data-i18n="service8_text">Разработка программ и отчетов ЛКУ, периодических отчётов, паспортов ТМО и отчётности формы 1-ТПИ.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="service9_title">Экология и промышленная безопасность</h3>
+          <p data-i18n="service9_text">Разработка ОВОС, РООС, экспертиз и деклараций промышленной безопасности.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2" data-i18n="about_title">О компании</h2>
+      </div>
+
+      <div class="panel about-panel">
+        <p data-i18n="about_p1">Мы сопровождаем проекты в сфере недропользования, обеспечивая профессиональную подготовку и оформление документации для разведки и добычи твердых полезных ископаемых и общераспространенных полезных ископаемых.</p>
+        <p data-i18n="about_p2">Компания работает на стыке геологии, лицензирования, регуляторных процедур и документального сопровождения, помогая бизнесу проходить сложные административные процессы уверенно, грамотно и в соответствии с требованиями законодательства.</p>
+        <p data-i18n="about_p3">Мы знаем, насколько важны в этой сфере точность формулировок, полнота пакета документов, соблюдение процедур и понимание практических нюансов. Именно поэтому наша работа строится не только на формальной подготовке материалов, но и на глубоком понимании самого процесса недропользования.</p>
+        <p data-i18n="about_p4">Мы сопровождаем клиентов от идеи и первичной оценки до полноценного документального оформления проекта, минимизируя риски, экономя время и повышая предсказуемость результата.</p>
+        <p data-i18n="about_p5">Наша миссия — делать сложные процессы лицензирования и сопровождения недропользования понятными, управляемыми и профессионально выстроенными для каждого клиента.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2" data-i18n="team_title">О команде</h2>
+      </div>
+
+      <div class="panel about-panel">
+        <p data-i18n="team_p1">Наша команда состоит из опытных и квалифицированных специалистов с практическим опытом работы в отрасли более 10 лет.</p>
+        <p data-i18n="team_p2">В ее состав входят геологи-разведчики, геологи по добыче, ресурсные геологи, специалисты по подсчету запасов, 3D-моделированию, построению каркасов и блочных моделей, а также специалисты в области горного планирования, проектирования и экологии.</p>
+        <p data-i18n="team_p3">В команде также работают эксперты, являющиеся членами KAZRC, JORC и CIG, что подтверждает высокий уровень профессиональной подготовки и соответствие международным и отраслевым стандартам в сфере геологии, оценки ресурсов и запасов.</p>
+        <p data-i18n="team_p4">Объединяя профильную экспертизу, практический опыт и системный подход, мы обеспечиваем качественное сопровождение проектов на всех этапах их реализации.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">FAQ</h2>
+        <p class="muted" data-i18n="faq_subtitle">Ответы на наиболее частые вопросы.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="panel">
+          <div class="panel__title" data-i18n="faq1_title">С какими направлениями вы работаете?</div>
+          <p class="muted" data-i18n="faq1_text">Мы сопровождаем проекты, связанные с разведкой и добычей ТПИ, ОПИ, старательством, а также проектированием, отчётностью, экологическими и промышленными разделами.</p>
+        </div>
+
+        <div class="panel">
+          <div class="panel__title" data-i18n="faq2_title">Можно ли заказать комплексное сопровождение?</div>
+          <p class="muted" data-i18n="faq2_text">Да. Мы можем сопровождать проект поэтапно: от лицензирования и проектирования до подготовки отчётности и профильной документации.</p>
+        </div>
+
+        <div class="panel">
+          <div class="panel__title" data-i18n="faq3_title">Как формируется стоимость?</div>
+          <p class="muted" data-i18n="faq3_text">Стоимость зависит от стадии проекта, объёма работ, состава исходных данных и количества необходимых документов.</p>
+        </div>
+
+        <div class="panel">
+          <div class="panel__title" data-i18n="faq4_title">Работаете ли вы с индивидуальными задачами?</div>
+          <p class="muted" data-i18n="faq4_text">Да. Мы рассматриваем как типовые услуги, так и нестандартные задачи в рамках сопровождения недропользования и проектной документации.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> CAPITAL EXPLORATION</div>
+      <div class="footer__contacts">
+        <span data-i18n="footer_country">Казахстан</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("ВСТАВЬ_СЮДА_PUBLIC_KEY");
+</script>
+<script src="app.js?v=12"></script>
+</body>
+</html>
