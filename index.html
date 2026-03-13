@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CAPITAL EXPLORATION — консалтинг в сфере недропользования</title>
   <meta name="description" content="CAPITAL EXPLORATION — лицензирование, проектирование, отчётность и сопровождение проектов недропользования в Казахстане." />
-  <link rel="stylesheet" href="styles.css?v=13" />
+  <link rel="stylesheet" href="styles.css?v=32" />
 </head>
 <body>
 
+<div class="site-bg" aria-hidden="true">
+  <canvas id="geoCanvas" class="site-bg__canvas"></canvas>
+  <div class="site-bg__glow site-bg__glow--a"></div>
+  <div class="site-bg__glow site-bg__glow--b"></div>
+  <div class="site-bg__glow site-bg__glow--c"></div>
+  <div class="site-bg__grid"></div>
+  <div class="site-bg__vignette"></div>
+</div>
+
 <header class="topbar">
+  <div class="topbar__bg"></div>
   <div class="container topbar__inner">
     <a class="brand" href="#top">
       <img src="logo.png" alt="CAPITAL EXPLORATION">
@@ -40,18 +50,14 @@
       <div class="hero__left">
         <div class="chip" data-i18n="hero_chip">Консалтинг • Недропользование • Казахстан</div>
 
-        <h1 class="h1" data-i18n="hero_title">
-          Комплексное сопровождение проектов&nbsp;<br>в сфере недропользования
-        </h1>
+	<h1 class="h1" data-i18n="hero_title">
+  	  Комплексное сопровождение<br>проектов в сфере недропользования
+	</h1>
 
         <p class="lead" data-i18n="hero_text">
           Лицензирование, проектирование, отчётность, экологическая и промышленная документация —
           от подготовки документов до запуска работ.
         </p>
-
-        <div class="actions">
-          <a class="btn btn--primary" href="#services" data-i18n="hero_btn_services">Наши услуги</a>
-        </div>
 
         <div class="kpis">
           <div class="kpi"><b data-i18n="kpi1_title">Под ключ</b><span data-i18n="kpi1_text">от лицензии до запуска работ</span></div>
@@ -101,8 +107,6 @@
         </form>
       </div>
     </div>
-
-    <div class="hero__bg" aria-hidden="true"></div>
   </section>
 
   <section class="section" id="services">
@@ -150,7 +154,7 @@
 
         <div class="card">
           <h3 data-i18n="service8_title">Отчётность недропользования</h3>
-          <p data-i18n="service8_text">Разработка программ и отчетов ЛКУ, периодических отчётов, паспортов ТМО и отчётности формы 1-ТПИ.</p>
+          <p data-i18n="service8_text">Разработка программ и отчётов ЛКУ, периодических отчётов, паспортов ТМО и отчётности формы 1-ТПИ.</p>
         </div>
 
         <div class="card">
@@ -244,6 +248,6 @@
     }
   });
 </script>
-<script src="app.js?v=13"></script>
+<script src="app.js?v=32"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ const i18n = {
     nav_cta: "Получить консультацию",
 
     hero_chip: "Консалтинг • Недропользование • Казахстан",
-    hero_title: "Комплексное сопровождение проектов&nbsp;<br>в сфере недропользования",
+    hero_title: "Комплексное сопровождение<br>проектов в сфере недропользования",
     hero_text: "Лицензирование, проектирование, отчётность, экологическая и промышленная документация — от подготовки документов до запуска работ.",
     hero_btn_services: "Наши услуги",
 
@@ -63,12 +63,12 @@ const i18n = {
     service7_title: "Аукционы по недропользованию",
     service7_text: "Подготовка документации для участия в аукционах по недропользованию.",
     service8_title: "Отчётность недропользования",
-    service8_text: "Разработка программ и отчетов ЛКУ, периодических отчётов, паспортов ТМО и отчётности формы 1-ТПИ.",
+    service8_text: "Разработка программ и отчётов ЛКУ, периодических отчётов, паспортов ТМО и отчётности формы 1-ТПИ.",
     service9_title: "Экология и промышленная безопасность",
     service9_text: "Разработка ОВОС, РООС, экспертиз и деклараций промышленной безопасности.",
 
     about_title: "О компании",
-    about_p1: "Мы сопровождаем проекты в сфере недропользования, обеспечивая профессиональную подготовку и оформление документации для разведки и добычи твердых полезных ископаемых и общераспространенных полезных ископаемых.",
+    about_p1: "Мы сопровождаем проекты в сфере недропользования, обеспечивая профессиональную подготовку и оформление документации для разведки и добычи твёрдых полезных ископаемых и общераспространённых полезных ископаемых.",
     about_p2: "Компания работает на стыке геологии, лицензирования, регуляторных процедур и документального сопровождения, помогая бизнесу проходить сложные административные процессы уверенно, грамотно и в соответствии с требованиями законодательства.",
     about_p3: "Мы знаем, насколько важны в этой сфере точность формулировок, полнота пакета документов, соблюдение процедур и понимание практических нюансов. Именно поэтому наша работа строится не только на формальной подготовке материалов, но и на глубоком понимании самого процесса недропользования.",
     about_p4: "Мы сопровождаем клиентов от идеи и первичной оценки до полноценного документального оформления проекта, минимизируя риски, экономя время и повышая предсказуемость результата.",
@@ -76,7 +76,7 @@ const i18n = {
 
     team_title: "О команде",
     team_p1: "Наша команда состоит из опытных и квалифицированных специалистов с практическим опытом работы в отрасли более 10 лет.",
-    team_p2: "В ее состав входят геологи-разведчики, геологи по добыче, ресурсные геологи, специалисты по подсчету запасов, 3D-моделированию, построению каркасов и блочных моделей, а также специалисты в области горного планирования, проектирования и экологии.",
+    team_p2: "В её состав входят геологи-разведчики, геологи по добыче, ресурсные геологи, специалисты по подсчёту запасов, 3D-моделированию, построению каркасов и блочных моделей, а также специалисты в области горного планирования, проектирования и экологии.",
     team_p3: "В команде также работают эксперты, являющиеся членами KAZRC, JORC и CIG, что подтверждает высокий уровень профессиональной подготовки и соответствие международным и отраслевым стандартам в сфере геологии, оценки ресурсов и запасов.",
     team_p4: "Объединяя профильную экспертизу, практический опыт и системный подход, мы обеспечиваем качественное сопровождение проектов на всех этапах их реализации.",
 
@@ -103,14 +103,14 @@ const i18n = {
     nav_cta: "Get Consultation",
 
     hero_chip: "Consulting • Subsoil Use • Kazakhstan",
-    hero_title: "Comprehensive support for projects&nbsp;<br>in the field of subsoil use",
+    hero_title: "Comprehensive support<br>for subsoil use projects",
     hero_text: "Licensing, engineering, reporting, environmental and industrial documentation — from document preparation to project launch.",
     hero_btn_services: "Our Services",
 
     kpi1_title: "Turnkey",
     kpi1_text: "from license to project launch",
     kpi2_title: "Solid / Common",
-    kpi2_text: "exploration, mining, artisanal",
+    kpi2_text: "exploration, mining and artisanal operations",
     kpi3_title: "Support",
     kpi3_text: "documents, projects, reporting",
     kpi4_title: "Focus",
@@ -140,7 +140,7 @@ const i18n = {
     services_subtitle: "Professional solutions for subsoil use projects.",
 
     service1_title: "Licensing and Permits",
-    service1_text: "Preparation and obtaining licenses for exploration and mining of solid minerals, common minerals and artisanal mining.",
+    service1_text: "Preparation and obtaining licenses for exploration and mining of solid minerals, common minerals and artisanal mining activities.",
     service2_title: "License Territory Return",
     service2_text: "Support for procedures related to the return of licensed territories.",
     service3_title: "Exploration and Mining Plans",
@@ -181,7 +181,7 @@ const i18n = {
     faq4_title: "Do you handle custom tasks?",
     faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
 
-    footer_country: "Kazakhstan, Karagandy",
+    footer_country: "Kazakhstan, Karaganda",
     send_success: "Request sent ✅",
     send_error: "Send error ❌ Check EmailJS settings"
   },
@@ -194,7 +194,7 @@ const i18n = {
     nav_cta: "Кеңес алу",
 
     hero_chip: "Консалтинг • Жер қойнауын пайдалану • Қазақстан",
-    hero_title: "Жер қойнауын пайдалану саласындағы жобаларды&nbsp;<br>кешенді сүйемелдеу",
+    hero_title: "Жер қойнауын пайдалану жобаларын<br>кешенді сүйемелдеу",
     hero_text: "Лицензиялау, жобалау, есептілік, экологиялық және өнеркәсіптік құжаттама — құжаттарды дайындаудан бастап жұмысты іске қосуға дейін.",
     hero_btn_services: "Қызметтеріміз",
 
@@ -257,7 +257,7 @@ const i18n = {
     about_p5: "Біздің миссиямыз — лицензиялау мен жер қойнауын пайдалануды сүйемелдеу сияқты күрделі процестерді әрбір клиент үшін түсінікті, басқарылатын және кәсіби түрде ұйымдастырылған ету.",
 
     team_title: "Команда туралы",
-    team_p1: "Біздің команда саланың ішінде 10 жылдан астам практикалық тәжірибесі бар тәжірибелі және білікті мамандардан тұрады.",
+    team_p1: "Біздің команда салада 10 жылдан астам практикалық тәжірибесі бар тәжірибелі және білікті мамандардан тұрады.",
     team_p2: "Оның құрамына барлау геологтары, өндіру геологтары, ресурстық геологтар, қорларды есептеу, 3D модельдеу, каркастар мен блоктық модельдер құру бойынша мамандар, сондай-ақ тау-кен жоспарлау, жобалау және экология саласындағы мамандар кіреді.",
     team_p3: "Командада KAZRC, JORC және CIG мүшелері болып табылатын сарапшылар да жұмыс істейді, бұл геология, ресурстар мен қорларды бағалау саласындағы халықаралық және салалық стандарттарға сәйкестікті және кәсіби дайындықтың жоғары деңгейін растайды.",
     team_p4: "Салалық сараптаманы, практикалық тәжірибені және жүйелі тәсілді біріктіре отырып, біз жобаларды іске асырудың барлық кезеңдерінде сапалы сүйемелдеуді қамтамасыз етеміз.",
@@ -327,3 +327,146 @@ if (leadForm) {
 }
 
 applyLanguage("ru");
+/* ---------- CANVAS GEO BACKGROUND ---------- */
+
+(function initGeoBackground() {
+  const canvas = document.getElementById("geoCanvas");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+  let dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  let width = 0;
+  let height = 0;
+  let time = 0;
+
+  const cellSize = 20;
+  const levels = [
+  -0.65,-0.52,-0.40,-0.30,-0.22,-0.15,
+  -0.08,0,
+  0.08,0.15,0.22,0.30,0.40,0.52,0.65
+  ];
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    width = Math.floor(rect.width);
+    height = Math.floor(rect.height);
+
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function field(x, y, t) {
+    const nx = x / width;
+    const ny = y / height;
+
+    const cx1 = 0.28 + Math.sin(t * 0.23) * 0.04;
+    const cy1 = 0.32 + Math.cos(t * 0.19) * 0.03;
+
+    const cx2 = 0.68 + Math.cos(t * 0.17) * 0.05;
+    const cy2 = 0.42 + Math.sin(t * 0.21) * 0.04;
+
+    const cx3 = 0.52 + Math.sin(t * 0.14) * 0.03;
+    const cy3 = 0.72 + Math.cos(t * 0.16) * 0.03;
+
+    const d1 = Math.exp(-(((nx - cx1) ** 2) / 0.020 + ((ny - cy1) ** 2) / 0.030));
+    const d2 = Math.exp(-(((nx - cx2) ** 2) / 0.028 + ((ny - cy2) ** 2) / 0.022));
+    const d3 = Math.exp(-(((nx - cx3) ** 2) / 0.040 + ((ny - cy3) ** 2) / 0.026));
+
+    const ridge =
+      Math.sin(nx * 10 + t * 0.15) * 0.08 +
+      Math.cos(ny * 9 - t * 0.12) * 0.08 +
+      Math.sin((nx + ny) * 12 + t * 0.10) * 0.05;
+
+    return d1 * 1.0 - d2 * 0.9 + d3 * 0.75 + ridge;
+  }
+
+  function interp(p1, p2, v1, v2, level) {
+    const t = (level - v1) / (v2 - v1 || 1e-6);
+    return {
+      x: p1.x + (p2.x - p1.x) * t,
+      y: p1.y + (p2.y - p1.y) * t
+    };
+  }
+
+  function drawContours() {
+    const cols = Math.ceil(width / cellSize) + 1;
+    const rows = Math.ceil(height / cellSize) + 1;
+
+    const values = Array.from({ length: rows }, () => Array(cols).fill(0));
+
+    for (let j = 0; j < rows; j++) {
+      for (let i = 0; i < cols; i++) {
+        values[j][i] = field(i * cellSize, j * cellSize, time);
+      }
+    }
+
+    for (const level of levels) {
+      ctx.beginPath();
+
+      for (let j = 0; j < rows - 1; j++) {
+        for (let i = 0; i < cols - 1; i++) {
+          const x = i * cellSize;
+          const y = j * cellSize;
+
+          const p0 = { x, y };
+          const p1 = { x: x + cellSize, y };
+          const p2 = { x: x + cellSize, y: y + cellSize };
+          const p3 = { x, y: y + cellSize };
+
+          const v0 = values[j][i];
+          const v1 = values[j][i + 1];
+          const v2 = values[j + 1][i + 1];
+          const v3 = values[j + 1][i];
+
+          const pts = [];
+
+          if ((v0 < level) !== (v1 < level)) pts.push(interp(p0, p1, v0, v1, level));
+          if ((v1 < level) !== (v2 < level)) pts.push(interp(p1, p2, v1, v2, level));
+          if ((v2 < level) !== (v3 < level)) pts.push(interp(p2, p3, v2, v3, level));
+          if ((v3 < level) !== (v0 < level)) pts.push(interp(p3, p0, v3, v0, level));
+
+          if (pts.length === 2) {
+            ctx.moveTo(pts[0].x, pts[0].y);
+            ctx.lineTo(pts[1].x, pts[1].y);
+          } else if (pts.length === 4) {
+            ctx.moveTo(pts[0].x, pts[0].y);
+            ctx.lineTo(pts[1].x, pts[1].y);
+            ctx.moveTo(pts[2].x, pts[2].y);
+            ctx.lineTo(pts[3].x, pts[3].y);
+          }
+        }
+      }
+
+      const alpha = 0.040 + (level + 0.65) * 0.040;
+      ctx.strokeStyle = `rgba(225, 220, 205, ${alpha})`;
+      ctx.lineWidth = Math.abs(level) < 0.01 ? 1.5 : 1.2;
+      ctx.stroke();
+    }
+  }
+
+  function drawBand() {
+    const g = ctx.createLinearGradient(0, 0, width, 0);
+    g.addColorStop(0, "rgba(0,0,0,0)");
+    g.addColorStop(0.18, "rgba(8,32,78,0.06)");
+    g.addColorStop(0.50, "rgba(10,36,90,0.12)");
+    g.addColorStop(0.82, "rgba(8,32,78,0.06)");
+    g.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, width, height);
+  }
+
+  function render() {
+    time += 0.012;
+    ctx.clearRect(0, 0, width, height);
+    drawBand();
+    drawContours();
+    requestAnimationFrame(render);
+  }
+
+  window.addEventListener("resize", resize);
+  resize();
+  render();
+})();
+
