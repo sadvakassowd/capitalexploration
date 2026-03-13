@@ -91,8 +91,8 @@ const i18n = {
     faq4_text: "Да. Мы рассматриваем как типовые услуги, так и нестандартные задачи в рамках сопровождения недропользования и проектной документации.",
 
     footer_country: "Казахстан, г. Караганда",
-    send_success: "Заявка отправлена ✅",
-    send_error: "Ошибка отправки ❌ Проверь настройки EmailJS"
+    send_success: "Запрос отправлен",
+    send_error: "Не удалось отправить запрос"
   },
 
   en: {
@@ -182,8 +182,8 @@ const i18n = {
     faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
 
     footer_country: "Kazakhstan, Karaganda",
-    send_success: "Request sent ✅",
-    send_error: "Send error ❌ Check EmailJS settings"
+    send_success: "Request sent",
+    send_error: "Failed to send request"
   },
 
   kz: {
@@ -273,8 +273,8 @@ const i18n = {
     faq4_text: "Иә. Біз жер қойнауын пайдалану мен жобалық құжаттаманы сүйемелдеу шеңберінде типтік те, стандартты емес те міндеттерді қараймыз.",
 
     footer_country: "Қазақстан",
-    send_success: "Сұраныс жіберілді ✅",
-    send_error: "Жіберу қатесі ❌ EmailJS баптауларын тексеріңіз"
+    send_success: "Сұраныс жіберілді",
+    send_error: "Сұранысты жіберу мүмкін болмады"
   }
 };
 
