@@ -504,9 +504,9 @@ input:focus,select:focus,textarea:focus{
 @media (max-width: 1024px){
   .topbar__inner{
     min-height:auto;
-    padding:14px 0 16px;
+    padding:12px 0 12px;
     flex-wrap:wrap;
-    gap:14px;
+    gap:10px;
   }
 
   .nav{
@@ -516,23 +516,40 @@ input:focus,select:focus,textarea:focus{
   .brand{
     width:100%;
     height:auto;
-    gap:12px;
+    min-height:auto;
+    gap:10px;
   }
 
   .brand img{
-    width:140px;
-    height:auto;
+    width:100px;
+    height:72px;
   }
 
   .brand span{
-    font-size:14px;
-    letter-spacing:1.3px;
+    font-size:13px;
+    letter-spacing:1.2px;
   }
 
   .topbar__actions{
     width:100%;
     justify-content:space-between;
     margin-left:0;
+    gap:10px;
+  }
+
+  .lang-switch{
+    gap:4px;
+    padding:3px;
+  }
+
+  .lang-btn{
+    padding:7px 9px;
+    font-size:13px;
+  }
+
+  .topbar__cta{
+    padding:9px 12px;
+    font-size:14px;
   }
 
   .hero{
@@ -580,9 +597,45 @@ input:focus,select:focus,textarea:focus{
     padding:0 16px;
   }
 
+  .topbar__inner{
+    padding:10px 0 10px;
+    gap:8px;
+  }
+
+  .brand{
+    gap:8px;
+  }
+
+  .brand img{
+    width:84px;
+    height:60px;
+  }
+
+  .brand span{
+    font-size:12px;
+    letter-spacing:1px;
+  }
+
+  .topbar__actions{
+    align-items:center;
+    gap:8px;
+  }
+
+  .lang-switch{
+    gap:3px;
+    padding:3px;
+    border-radius:12px;
+  }
+
+  .lang-btn{
+    padding:6px 8px;
+    font-size:12px;
+  }
+
   .topbar__cta{
-    padding:10px 14px;
-    font-size:14px;
+    padding:8px 10px;
+    font-size:13px;
+    border-radius:12px;
   }
 
   .h1{

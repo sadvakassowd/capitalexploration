@@ -1,7 +1,7 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const EMAILJS_SERVICE_ID = "service_ktatykj";
-const EMAILJS_TEMPLATE_ID = "template_zb8eptd";
+const EMAILJS_TEMPLATE_ID = "template_zb8eptdD";
 
 const i18n = {
   ru: {
@@ -90,7 +90,7 @@ const i18n = {
     faq4_title: "Работаете ли вы с индивидуальными задачами?",
     faq4_text: "Да. Мы рассматриваем как типовые услуги, так и нестандартные задачи в рамках сопровождения недропользования и проектной документации.",
 
-    footer_country: "Казахстан",
+    footer_country: "Казахстан, г. Караганда",
     send_success: "Заявка отправлена ✅",
     send_error: "Ошибка отправки ❌ Проверь настройки EmailJS"
   },
@@ -181,7 +181,7 @@ const i18n = {
     faq4_title: "Do you handle custom tasks?",
     faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
 
-    footer_country: "Kazakhstan",
+    footer_country: "Kazakhstan, Karagandy",
     send_success: "Request sent ✅",
     send_error: "Send error ❌ Check EmailJS settings"
   },
@@ -325,6 +325,5 @@ if (leadForm) {
     }
   });
 }
-
 
 applyLanguage("ru");
