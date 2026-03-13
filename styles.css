@@ -524,3 +524,18 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
   background: #131a22;
 }
+
+select{
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(7,10,15,.44), rgba(7,10,15,.30));
+}
+
+select option{
+  background: #0b1119;
+  color: #eaf0ff;
+}
+
+select:focus option:checked{
+  background: #162231;
+  color: #eaf0ff;
+}
