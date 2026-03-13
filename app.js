@@ -1,7 +1,7 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const EMAILJS_SERVICE_ID = "service_ktatykj";
-const EMAILJS_TEMPLATE_ID = "template_zb8eptdD";
+const EMAILJS_TEMPLATE_ID = "template_zb8eptd";
 
 const i18n = {
   ru: {
