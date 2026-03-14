@@ -95,6 +95,7 @@ const i18n = {
     faq4_title: "Работаете ли вы с индивидуальными задачами?",
     faq4_text: "Да. Мы рассматриваем как типовые услуги, так и нестандартные задачи в рамках сопровождения недропользования и проектной документации.",
 
+    footer_phone: "+7 705 384 6999",
     footer_country: "Казахстан, г. Караганда"
   },
 
@@ -188,7 +189,8 @@ const i18n = {
     faq3_text: "Құны жоба кезеңіне, жұмыс көлеміне, бастапқы деректердің толықтығына және қажетті құжаттар санына байланысты.",
     faq4_title: "Жеке міндеттермен жұмыс істейсіздер ме?",
     faq4_text: "Иә. Біз жер қойнауын пайдалану мен жобалық құжаттаманы сүйемелдеу шеңберінде типтік те, стандартты емес те міндеттерді қараймыз.",
-
+    
+    footer_phone: "+7 705 384 6999",
     footer_country: "Қазақстан"
   },
 
@@ -282,8 +284,9 @@ const i18n = {
     faq3_text: "Pricing depends on the project stage, scope of work, completeness of source data and the number of required documents.",
     faq4_title: "Do you handle custom tasks?",
     faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
-
-    footer_country: "Kazakhstan, Karaganda"
+     
+    footer_phone: "+7 705 384 6999",
+    footer_country: "Kazakhstan, Karaganda"  
   }
 };
 
