@@ -6,6 +6,7 @@
   <title>CAPITAL EXPLORATION — консалтинг в сфере недропользования</title>
   <meta name="description" content="CAPITAL EXPLORATION — лицензирование, проектирование, отчётность и сопровождение проектов недропользования в Казахстане." />
   <link rel="stylesheet" href="styles.css?v=32" />
+  <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
 
@@ -35,8 +36,8 @@
     <div class="topbar__actions">
       <div class="lang-switch">
         <button class="lang-btn is-active" id="btnRu" type="button">RU</button>
-        <button class="lang-btn" id="btnEn" type="button">EN</button>
         <button class="lang-btn" id="btnKz" type="button">KZ</button>
+        <button class="lang-btn" id="btnEn" type="button">EN</button>
       </div>
       <a class="btn btn--primary topbar__cta" href="#quick-request" data-i18n="nav_cta">Получить консультацию</a>
     </div>
@@ -102,7 +103,11 @@
             <textarea name="message" data-i18n-placeholder="form_message_ph" placeholder="Коротко опишите задачу"></textarea>
           </label>
 
-          <button class="btn btn--primary btn--full" type="submit" data-i18n="form_submit">Отправить запрос</button>
+          <button class="btn btn--primary btn--full" type="submit" id="leadSubmitBtn" data-i18n="form_submit">
+            Отправить запрос
+          </button>
+
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
         </form>
       </div>
     </div>
@@ -131,10 +136,15 @@
           <p data-i18n="service3_text">Разработка планов разведки, планов горных работ и рабочих программ к контрактам на разведку и добычу полезных ископаемых.</p>
         </div>
 
-        <div class="card">
-          <h3 data-i18n="service4_title">Проектирование объектов</h3>
-          <p data-i18n="service4_text">Проектирование хвостохранилищ и разработки техногенных минеральных образований (ТМО).</p>
-        </div>
+       <div class="card">
+         <h3 data-i18n="service10_title">Маркшейдерские работы</h3>
+         <p data-i18n="service10_text">Маркшейдерская съемка горных объектов, вынос проектных границ в натуру, подсчет объемов и ведение документации с применением аэрофотосъемки (БПЛА).</p>
+       </div>
+
+       <div class="card">
+         <h3 data-i18n="service11_title">Проектирование горных работ</h3>
+         <p data-i18n="service11_text">Оптимизация контуров карьера и параметров уступов с разработкой схем вскрытия, системы разработки и расчетом объемов работ и производительности оборудования.</p>
+       </div>
 
         <div class="card">
           <h3 data-i18n="service5_title">Рекультивация и ликвидация</h3>

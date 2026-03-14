@@ -44,6 +44,9 @@ const i18n = {
     form_message: "Сообщение",
     form_message_ph: "Коротко опишите задачу",
     form_submit: "Отправить запрос",
+    form_submit_loading: "Отправляется...",
+    form_submit_success: "✓ Запрос отправлен",
+    form_status_error: "Не удалось отправить запрос",
 
     services_title: "Наши услуги",
     services_subtitle: "Профессиональные решения для проектов в сфере недропользования.",
@@ -54,8 +57,10 @@ const i18n = {
     service2_text: "Сопровождение процедур возврата лицензионных территорий.",
     service3_title: "Планы разведки и горных работ",
     service3_text: "Разработка планов разведки, планов горных работ и рабочих программ к контрактам на разведку и добычу полезных ископаемых.",
-    service4_title: "Проектирование объектов",
-    service4_text: "Проектирование хвостохранилищ и разработки техногенных минеральных образований (ТМО).",
+    service10_title: "Маркшейдерские работы",
+    service10_text: "Маркшейдерская съемка горных объектов, вынос проектных границ в натуру, подсчет объемов и ведение документации с применением аэрофотосъёмки (БПЛА).",
+    service11_title: "Проектирование горных работ",
+    service11_text: "Оптимизация контуров карьера и параметров уступов с разработкой схем вскрытия, системы разработки и расчетом объемов работ и производительности оборудования.",
     service5_title: "Рекультивация и ликвидация",
     service5_text: "Проектирование рекультивации и ликвидации объектов недропользования.",
     service6_title: "Подсчёт запасов",
@@ -90,100 +95,7 @@ const i18n = {
     faq4_title: "Работаете ли вы с индивидуальными задачами?",
     faq4_text: "Да. Мы рассматриваем как типовые услуги, так и нестандартные задачи в рамках сопровождения недропользования и проектной документации.",
 
-    footer_country: "Казахстан, г. Караганда",
-    send_success: "Запрос отправлен",
-    send_error: "Не удалось отправить запрос"
-  },
-
-  en: {
-    nav_services: "Services",
-    nav_about: "About",
-    nav_team: "Team",
-    nav_faq: "FAQ",
-    nav_cta: "Get Consultation",
-
-    hero_chip: "Consulting • Subsoil Use • Kazakhstan",
-    hero_title: "Comprehensive support<br>for subsoil use projects",
-    hero_text: "Licensing, engineering, reporting, environmental and industrial documentation — from document preparation to project launch.",
-    hero_btn_services: "Our Services",
-
-    kpi1_title: "Turnkey",
-    kpi1_text: "from license to project launch",
-    kpi2_title: "Solid / Common",
-    kpi2_text: "exploration, mining and artisanal operations",
-    kpi3_title: "Support",
-    kpi3_text: "documents, projects, reporting",
-    kpi4_title: "Focus",
-    kpi4_text: "subsoil use and mining engineering",
-    kpi5_title: "Approach",
-    kpi5_text: "structured stage-by-stage work",
-    kpi6_title: "Result",
-    kpi6_text: "clear deadlines and transparent process",
-
-    form_title: "Quick Request",
-    form_name: "Name / Company",
-    form_name_ph: "For example: LLP …",
-    form_phone: "Phone / WhatsApp",
-    form_phone_ph: "+7 …",
-    form_need: "What is required",
-    form_select: "Select…",
-    need_license: "Licensing",
-    need_design: "Engineering",
-    need_reports: "Reporting",
-    need_env: "Environment / Industrial Safety",
-    need_full: "Comprehensive Support",
-    form_message: "Message",
-    form_message_ph: "Briefly describe your request",
-    form_submit: "Send Request",
-
-    services_title: "Our Services",
-    services_subtitle: "Professional solutions for subsoil use projects.",
-
-    service1_title: "Licensing and Permits",
-    service1_text: "Preparation and obtaining licenses for exploration and mining of solid minerals, common minerals and artisanal mining activities.",
-    service2_title: "License Territory Return",
-    service2_text: "Support for procedures related to the return of licensed territories.",
-    service3_title: "Exploration and Mining Plans",
-    service3_text: "Preparation of exploration plans, mining plans and work programs under exploration and mining contracts.",
-    service4_title: "Facility Engineering",
-    service4_text: "Engineering of tailings facilities and development of technogenic mineral formations.",
-    service5_title: "Reclamation and Closure",
-    service5_text: "Engineering of reclamation and closure projects for subsoil use facilities.",
-    service6_title: "Resource Estimation",
-    service6_text: "Resource estimation in accordance with JORC, KAZRC and CIG requirements.",
-    service7_title: "Subsoil Auctions",
-    service7_text: "Preparation of documentation for participation in subsoil use auctions.",
-    service8_title: "Regulatory Reporting",
-    service8_text: "Development of LCU programs and reports, periodic reports, TMO passports and Form 1-TPI reporting.",
-    service9_title: "Environmental and Industrial Safety",
-    service9_text: "Preparation of EIA, environmental sections, industrial safety expert reviews and declarations.",
-
-    about_title: "About",
-    about_p1: "We support projects in the field of subsoil use, providing professional preparation and execution of documentation for exploration and mining of solid minerals and common minerals.",
-    about_p2: "The company operates at the intersection of geology, licensing, regulatory procedures and documentary support, helping businesses navigate complex administrative processes confidently, competently and in full compliance with legislation.",
-    about_p3: "We understand how important precise wording, completeness of document packages, procedural compliance and practical industry nuances are in this field. That is why our work is based not only on formal document preparation, but also on a deep understanding of the subsoil use process itself.",
-    about_p4: "We support clients from idea and initial assessment to full documentary formalization of the project, minimizing risks, saving time and increasing predictability of the result.",
-    about_p5: "Our mission is to make complex licensing and subsoil use support processes understandable, manageable and professionally structured for every client.",
-
-    team_title: "Team",
-    team_p1: "Our team consists of experienced and qualified specialists with more than 10 years of practical experience in the industry.",
-    team_p2: "It includes exploration geologists, mining geologists, resource geologists, specialists in resource estimation, 3D modeling, wireframe and block model construction, as well as specialists in mine planning, engineering and environmental support.",
-    team_p3: "The team also includes experts who are members of KAZRC, JORC and CIG, confirming a high level of professional qualification and compliance with international and industry standards in geology and resource/reserve estimation.",
-    team_p4: "By combining industry expertise, practical experience and a systematic approach, we ensure high-quality support of projects at all stages of implementation.",
-
-    faq_subtitle: "Answers to frequently asked questions.",
-    faq1_title: "What areas do you work with?",
-    faq1_text: "We support projects related to exploration and mining of solid minerals, common minerals and artisanal mining, as well as engineering, reporting, environmental and industrial safety documentation.",
-    faq2_title: "Can we order full project support?",
-    faq2_text: "Yes. We can support a project stage by stage: from licensing and engineering to reporting and profile documentation.",
-    faq3_title: "How is pricing formed?",
-    faq3_text: "Pricing depends on the project stage, scope of work, completeness of source data and the number of required documents.",
-    faq4_title: "Do you handle custom tasks?",
-    faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
-
-    footer_country: "Kazakhstan, Karaganda",
-    send_success: "Request sent",
-    send_error: "Failed to send request"
+    footer_country: "Казахстан, г. Караганда"
   },
 
   kz: {
@@ -226,6 +138,9 @@ const i18n = {
     form_message: "Хабарлама",
     form_message_ph: "Міндетті қысқаша сипаттаңыз",
     form_submit: "Сұраныс жіберу",
+    form_submit_loading: "Жіберілуде...",
+    form_submit_success: "✓ Сұраныс жіберілді",
+    form_status_error: "Сұранысты жіберу мүмкін болмады",
 
     services_title: "Қызметтеріміз",
     services_subtitle: "Жер қойнауын пайдалану жобаларына арналған кәсіби шешімдер.",
@@ -236,8 +151,10 @@ const i18n = {
     service2_text: "Лицензиялық аумақтарды қайтару рәсімдерін сүйемелдеу.",
     service3_title: "Барлау және тау-кен жұмыстарының жоспарлары",
     service3_text: "Барлау жоспарларын, тау-кен жұмыстарының жоспарларын және пайдалы қазбаларды барлау мен өндіруге арналған келісімшарттар бойынша жұмыс бағдарламаларын әзірлеу.",
-    service4_title: "Объектілерді жобалау",
-    service4_text: "Хвостохранилищелерді және техногендік минералдық түзілімдерді (ТМО) игеруді жобалау.",
+    service10_title: "Маркшейдерлік жұмыстар",
+    service10_text: "Тау-кен объектілерін маркшейдерлік түсіру, жобалық шекараларды жергілікті жерге шығару, көлемдерді есептеу және БПЛА арқылы аэрофототүсірілімді қолдана отырып құжаттаманы жүргізу.",
+    service11_title: "Тау-кен жұмыстарын жобалау",
+    service11_text: "Карьер контурлары мен уступ параметрлерін оңтайландыру, ашу схемаларын, игеру жүйесін әзірлеу және жұмыс көлемдері мен жабдық өнімділігін есептеу.",
     service5_title: "Рекультивация және жою",
     service5_text: "Жер қойнауын пайдалану объектілерін рекультивациялау және жою жобаларын әзірлеу.",
     service6_title: "Қорларды есептеу",
@@ -272,13 +189,128 @@ const i18n = {
     faq4_title: "Жеке міндеттермен жұмыс істейсіздер ме?",
     faq4_text: "Иә. Біз жер қойнауын пайдалану мен жобалық құжаттаманы сүйемелдеу шеңберінде типтік те, стандартты емес те міндеттерді қараймыз.",
 
-    footer_country: "Қазақстан",
-    send_success: "Сұраныс жіберілді",
-    send_error: "Сұранысты жіберу мүмкін болмады"
+    footer_country: "Қазақстан"
+  },
+
+  en: {
+    nav_services: "Services",
+    nav_about: "About",
+    nav_team: "Team",
+    nav_faq: "FAQ",
+    nav_cta: "Get Consultation",
+
+    hero_chip: "Consulting • Subsoil Use • Kazakhstan",
+    hero_title: "Comprehensive support<br>for subsoil use projects",
+    hero_text: "Licensing, engineering, reporting, environmental and industrial documentation — from document preparation to project launch.",
+    hero_btn_services: "Our Services",
+
+    kpi1_title: "Turnkey",
+    kpi1_text: "from license to project launch",
+    kpi2_title: "Solid / Common",
+    kpi2_text: "exploration, mining and artisanal operations",
+    kpi3_title: "Support",
+    kpi3_text: "documents, projects, reporting",
+    kpi4_title: "Focus",
+    kpi4_text: "subsoil use and mining engineering",
+    kpi5_title: "Approach",
+    kpi5_text: "structured stage-by-stage work",
+    kpi6_title: "Result",
+    kpi6_text: "clear deadlines and transparent process",
+
+    form_title: "Quick Request",
+    form_name: "Name / Company",
+    form_name_ph: "For example: LLP …",
+    form_phone: "Phone / WhatsApp",
+    form_phone_ph: "+7 …",
+    form_need: "What is required",
+    form_select: "Select…",
+    need_license: "Licensing",
+    need_design: "Engineering",
+    need_reports: "Reporting",
+    need_env: "Environment / Industrial Safety",
+    need_full: "Comprehensive Support",
+    form_message: "Message",
+    form_message_ph: "Briefly describe your request",
+    form_submit: "Send Request",
+    form_submit_loading: "Sending...",
+    form_submit_success: "✓ Request sent",
+    form_status_error: "Failed to send request",
+
+    services_title: "Our Services",
+    services_subtitle: "Professional solutions for subsoil use projects.",
+
+    service1_title: "Licensing and Permits",
+    service1_text: "Preparation and obtaining licenses for exploration and mining of solid minerals, common minerals and artisanal mining activities.",
+    service2_title: "License Territory Return",
+    service2_text: "Support for procedures related to the return of licensed territories.",
+    service3_title: "Exploration and Mining Plans",
+    service3_text: "Preparation of exploration plans, mining plans and work programs under exploration and mining contracts.",
+    service10_title: "Mine Surveying",
+    service10_text: "Surveying of mining facilities, staking of project boundaries in the field, volume calculations and documentation using aerial photogrammetry (UAV).",
+    service11_title: "Mine Planning",
+    service11_text: "Optimization of pit boundaries and bench parameters with development of access schemes, mining methods and calculation of work volumes and equipment productivity.",
+    service5_title: "Reclamation and Closure",
+    service5_text: "Engineering of reclamation and closure projects for subsoil use facilities.",
+    service6_title: "Resource Estimation",
+    service6_text: "Resource estimation in accordance with JORC, KAZRC and CIG requirements.",
+    service7_title: "Subsoil Auctions",
+    service7_text: "Preparation of documentation for participation in subsoil use auctions.",
+    service8_title: "Regulatory Reporting",
+    service8_text: "Development of LCU programs and reports, periodic reports, TMO passports and Form 1-TPI reporting.",
+    service9_title: "Environmental and Industrial Safety",
+    service9_text: "Preparation of EIA, environmental sections, industrial safety expert reviews and declarations.",
+
+    about_title: "About",
+    about_p1: "We support projects in the field of subsoil use, providing professional preparation and execution of documentation for exploration and mining of solid minerals and common minerals.",
+    about_p2: "The company operates at the intersection of geology, licensing, regulatory procedures and documentary support, helping businesses navigate complex administrative processes confidently, competently and in full compliance with legislation.",
+    about_p3: "We understand how important precise wording, completeness of document packages, procedural compliance and practical industry nuances are in this field. That is why our work is based not only on formal document preparation, but also on a deep understanding of the subsoil use process itself.",
+    about_p4: "We support clients from idea and initial assessment to full documentary formalization of the project, minimizing risks, saving time and increasing predictability of the result.",
+    about_p5: "Our mission is to make complex licensing and subsoil use support processes understandable, manageable and professionally structured for every client.",
+
+    team_title: "Team",
+    team_p1: "Our team consists of experienced and qualified specialists with more than 10 years of practical experience in the industry.",
+    team_p2: "It includes exploration geologists, mining geologists, resource geologists, specialists in resource estimation, 3D modeling, wireframe and block model construction, as well as specialists in mine planning, engineering and environmental support.",
+    team_p3: "The team also includes experts who are members of KAZRC, JORC and CIG, confirming a high level of professional qualification and compliance with international and industry standards in geology and resource/reserve estimation.",
+    team_p4: "By combining industry expertise, practical experience and a systematic approach, we ensure high-quality support of projects at all stages of implementation.",
+
+    faq_subtitle: "Answers to frequently asked questions.",
+    faq1_title: "What areas do you work with?",
+    faq1_text: "We support projects related to exploration and mining of solid minerals, common minerals and artisanal mining, as well as engineering, reporting, environmental and industrial safety documentation.",
+    faq2_title: "Can we order full project support?",
+    faq2_text: "Yes. We can support a project stage by stage: from licensing and engineering to reporting and profile documentation.",
+    faq3_title: "How is pricing formed?",
+    faq3_text: "Pricing depends on the project stage, scope of work, completeness of source data and the number of required documents.",
+    faq4_title: "Do you handle custom tasks?",
+    faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
+
+    footer_country: "Kazakhstan, Karaganda"
   }
 };
 
 let currentLang = "ru";
+
+const leadForm = document.getElementById("leadForm");
+const leadSubmitBtn = document.getElementById("leadSubmitBtn");
+const formStatus = document.getElementById("formStatus");
+let formSuccessTimer = null;
+
+function setFormStatus(type, text) {
+  if (!formStatus) return;
+
+  formStatus.textContent = text;
+  formStatus.classList.remove("is-success", "is-error", "is-visible");
+
+  if (type === "success") formStatus.classList.add("is-success");
+  if (type === "error") formStatus.classList.add("is-error");
+  if (text) formStatus.classList.add("is-visible");
+}
+
+function resetSubmitButton() {
+  if (!leadSubmitBtn) return;
+  leadSubmitBtn.disabled = false;
+  leadSubmitBtn.classList.remove("is-loading", "is-success");
+  leadSubmitBtn.textContent = i18n[currentLang].form_submit;
+}
 
 function applyLanguage(lang) {
   currentLang = lang;
@@ -302,31 +334,64 @@ function applyLanguage(lang) {
   });
 
   document.getElementById("btnRu").classList.toggle("is-active", lang === "ru");
-  document.getElementById("btnEn").classList.toggle("is-active", lang === "en");
   document.getElementById("btnKz").classList.toggle("is-active", lang === "kz");
+  document.getElementById("btnEn").classList.toggle("is-active", lang === "en");
+
+  if (leadSubmitBtn && !leadSubmitBtn.classList.contains("is-loading") && !leadSubmitBtn.classList.contains("is-success")) {
+    leadSubmitBtn.textContent = i18n[lang].form_submit;
+  }
+
+  if (formStatus && formStatus.classList.contains("is-error")) {
+    formStatus.textContent = i18n[lang].form_status_error;
+  }
+
+  if (leadSubmitBtn && leadSubmitBtn.classList.contains("is-success")) {
+    leadSubmitBtn.textContent = i18n[lang].form_submit_success;
+  }
 }
 
 document.getElementById("btnRu").addEventListener("click", () => applyLanguage("ru"));
-document.getElementById("btnEn").addEventListener("click", () => applyLanguage("en"));
 document.getElementById("btnKz").addEventListener("click", () => applyLanguage("kz"));
+document.getElementById("btnEn").addEventListener("click", () => applyLanguage("en"));
 
-const leadForm = document.getElementById("leadForm");
 if (leadForm) {
   leadForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    if (!leadSubmitBtn) return;
+
+    if (formSuccessTimer) {
+      clearTimeout(formSuccessTimer);
+      formSuccessTimer = null;
+    }
+
+    setFormStatus("", "");
+    leadSubmitBtn.disabled = true;
+    leadSubmitBtn.classList.remove("is-success");
+    leadSubmitBtn.classList.add("is-loading");
+    leadSubmitBtn.textContent = i18n[currentLang].form_submit_loading;
+
     try {
       await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, leadForm);
-      alert(i18n[currentLang].send_success);
+
       leadForm.reset();
+      leadSubmitBtn.classList.remove("is-loading");
+      leadSubmitBtn.classList.add("is-success");
+      leadSubmitBtn.textContent = i18n[currentLang].form_submit_success;
+
+      formSuccessTimer = setTimeout(() => {
+        resetSubmitButton();
+      }, 2000);
     } catch (err) {
       console.error(err);
-      alert(i18n[currentLang].send_error);
+      setFormStatus("error", i18n[currentLang].form_status_error);
+      resetSubmitButton();
     }
   });
 }
 
 applyLanguage("ru");
+
 /* ---------- CANVAS GEO BACKGROUND ---------- */
 
 (function initGeoBackground() {
@@ -342,9 +407,9 @@ applyLanguage("ru");
 
   const cellSize = 20;
   const levels = [
-  -0.65,-0.52,-0.40,-0.30,-0.22,-0.15,
-  -0.08,0,
-  0.08,0.15,0.22,0.30,0.40,0.52,0.65
+    -0.65, -0.52, -0.40, -0.30, -0.22, -0.15,
+    -0.08, 0,
+    0.08, 0.15, 0.22, 0.30, 0.40, 0.52, 0.65
   ];
 
   function resize() {
@@ -355,6 +420,11 @@ applyLanguage("ru");
     canvas.width = Math.floor(width * dpr);
     canvas.height = Math.floor(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = "high";
   }
 
   function field(x, y, t) {
@@ -469,4 +539,3 @@ applyLanguage("ru");
   resize();
   render();
 })();
-
