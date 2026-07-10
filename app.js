@@ -8,6 +8,7 @@ const i18n = {
     nav_services: "Услуги",
     nav_about: "О компании",
     nav_team: "О команде",
+    nav_certificates: "Сертификаты",
     nav_faq: "FAQ",
     nav_cta: "Получить консультацию",
 
@@ -87,6 +88,26 @@ const i18n = {
     team_p3: "В команде также работают эксперты, являющиеся членами KAZRC и JORC, что подтверждает высокий уровень профессиональной подготовки и соответствие международным и отраслевым стандартам в сфере геологии, оценки ресурсов и запасов.",
     team_p4: "Объединяя профильную экспертизу, практический опыт и системный подход, мы обеспечиваем качественное сопровождение проектов на всех этапах их реализации.",
 
+    certificates_title: "Компетентные лица",
+    certificates_subtitle: "Квалификация специалистов подтверждена членством в профессиональных геологических ассоциациях CIG и AIG.",
+    certificate_view: "Посмотреть сертификат",
+
+    certificate_zhanat_name: "Жанат Тулеубаев",
+    certificate_zhanat_role: "Fellow CIG, член №0129",
+    certificate_zhanat_validity: "Действителен до 31 декабря 2026 года",
+
+    certificate_dias_name: "Диас Жабаев",
+    certificate_dias_role: "Fellow CIG, член №0100",
+    certificate_dias_validity: "Действителен до 31 декабря 2026 года",
+
+    certificate_yerzhan_name: "Ержан Узакбаев",
+    certificate_yerzhan_role: "MAIG, член AIG №5769",
+    certificate_yerzhan_validity: "Сертификат членства 2022/2023",
+
+    certificate_asylbek_name: "Асылбек Аухадиев",
+    certificate_asylbek_role: "MAIG, член AIG №8707",
+    certificate_asylbek_validity: "Сертификат членства 2024/2025",
+
     faq_subtitle: "Ответы на наиболее частые вопросы.",
     faq1_title: "С какими направлениями вы работаете?",
     faq1_text: "Мы сопровождаем проекты, связанные с разведкой и добычей ТПИ, ОПИ, старательством, а также проектированием, отчётностью, экологическими и промышленными разделами.",
@@ -105,6 +126,7 @@ const i18n = {
     nav_services: "Қызметтер",
     nav_about: "Компания туралы",
     nav_team: "Команда туралы",
+    nav_certificates: "Сертификаттар",
     nav_faq: "FAQ",
     nav_cta: "Кеңес алу",
 
@@ -161,7 +183,7 @@ const i18n = {
     service5_title: "Рекультивация және жою",
     service5_text: "Жер қойнауын пайдалану объектілерін рекультивациялау және жою жобаларын әзірлеу.",
     service6_title: "Қорларды есептеу",
-    service6_text: "JORC және KAZRC  кодексі талаптарына сәйкес қорларды есептеу.",
+    service6_text: "JORC және KAZRC кодексі талаптарына сәйкес қорларды есептеу.",
     service12_title: "QA/QC сапаны бақылау",
     service12_text: "QA/QC рәсімдерін сүйемелдеу, сынама алу, зертханалық талдаулар және геологиялық барлау деректерінің сапасын тексеру.",
     service7_title: "Жер қойнауын пайдалану аукциондары",
@@ -181,8 +203,28 @@ const i18n = {
     team_title: "Команда туралы",
     team_p1: "Біздің команда салада 10 жылдан астам практикалық тәжірибесі бар тәжірибелі және білікті мамандардан тұрады.",
     team_p2: "Оның құрамына барлау геологтары, өндіру геологтары, ресурстық геологтар, қорларды есептеу, 3D модельдеу, каркастар мен блоктық модельдер құру бойынша мамандар, сондай-ақ тау-кен жоспарлау, жобалау және экология саласындағы мамандар кіреді.",
-    team_p3: "Командада KAZRC және JORC  мүшелері болып табылатын сарапшылар да жұмыс істейді, бұл геология, ресурстар мен қорларды бағалау саласындағы халықаралық және салалық стандарттарға сәйкестікті және кәсіби дайындықтың жоғары деңгейін растайды.",
+    team_p3: "Командада KAZRC және JORC мүшелері болып табылатын сарапшылар да жұмыс істейді, бұл геология, ресурстар мен қорларды бағалау саласындағы халықаралық және салалық стандарттарға сәйкестікті және кәсіби дайындықтың жоғары деңгейін растайды.",
     team_p4: "Салалық сараптаманы, практикалық тәжірибені және жүйелі тәсілді біріктіре отырып, біз жобаларды іске асырудың барлық кезеңдерінде сапалы сүйемелдеуді қамтамасыз етеміз.",
+
+    certificates_title: "Құзыретті тұлғалар",
+    certificates_subtitle: "Мамандардың біліктілігі CIG және AIG кәсіби геологиялық қауымдастықтарына мүшелігімен расталған.",
+    certificate_view: "Сертификатты қарау",
+
+    certificate_zhanat_name: "Жанат Тулеубаев",
+    certificate_zhanat_role: "CIG Fellow, №0129 мүшесі",
+    certificate_zhanat_validity: "2026 жылғы 31 желтоқсанға дейін жарамды",
+
+    certificate_dias_name: "Диас Жабаев",
+    certificate_dias_role: "CIG Fellow, №0100 мүшесі",
+    certificate_dias_validity: "2026 жылғы 31 желтоқсанға дейін жарамды",
+
+    certificate_yerzhan_name: "Ержан Узакбаев",
+    certificate_yerzhan_role: "MAIG, AIG №5769 мүшесі",
+    certificate_yerzhan_validity: "2022/2023 жылдарға арналған мүшелік сертификаты",
+
+    certificate_asylbek_name: "Асылбек Аухадиев",
+    certificate_asylbek_role: "MAIG, AIG №8707 мүшесі",
+    certificate_asylbek_validity: "2024/2025 жылдарға арналған мүшелік сертификаты",
 
     faq_subtitle: "Ең жиі қойылатын сұрақтарға жауаптар.",
     faq1_title: "Қандай бағыттармен жұмыс істейсіздер?",
@@ -193,7 +235,7 @@ const i18n = {
     faq3_text: "Құны жоба кезеңіне, жұмыс көлеміне, бастапқы деректердің толықтығына және қажетті құжаттар санына байланысты.",
     faq4_title: "Жеке міндеттермен жұмыс істейсіздер ме?",
     faq4_text: "Иә. Біз жер қойнауын пайдалану мен жобалық құжаттаманы сүйемелдеу шеңберінде типтік те, стандартты емес те міндеттерді қараймыз.",
-    
+
     footer_phone: "+7 705 384 6999",
     footer_country: "Қазақстан"
   },
@@ -202,6 +244,7 @@ const i18n = {
     nav_services: "Services",
     nav_about: "About",
     nav_team: "Team",
+    nav_certificates: "Certificates",
     nav_faq: "FAQ",
     nav_cta: "Get Consultation",
 
@@ -258,7 +301,7 @@ const i18n = {
     service5_title: "Reclamation and Closure",
     service5_text: "Engineering of reclamation and closure projects for subsoil use facilities.",
     service6_title: "Resource Estimation",
-    service6_text: "Resource estimation in accordance with JORC and KAZRC  requirements.",
+    service6_text: "Resource estimation in accordance with JORC and KAZRC requirements.",
     service12_title: "QA/QC Quality Control",
     service12_text: "Support of QA/QC procedures, control of sampling, laboratory analyses and verification of exploration data quality.",
     service7_title: "Subsoil Auctions",
@@ -281,6 +324,26 @@ const i18n = {
     team_p3: "The team also includes experts who are members of KAZRC and JORC, confirming a high level of professional qualification and compliance with international and industry standards in geology and resource/reserve estimation.",
     team_p4: "By combining industry expertise, practical experience and a systematic approach, we ensure high-quality support of projects at all stages of implementation.",
 
+    certificates_title: "Competent Persons",
+    certificates_subtitle: "The specialists’ qualifications are confirmed by membership in the professional geological associations CIG and AIG.",
+    certificate_view: "View certificate",
+
+    certificate_zhanat_name: "Zhanat Tuleubayev",
+    certificate_zhanat_role: "CIG Fellow, member No. 0129",
+    certificate_zhanat_validity: "Valid until 31 December 2026",
+
+    certificate_dias_name: "Dias Zhabayev",
+    certificate_dias_role: "CIG Fellow, member No. 0100",
+    certificate_dias_validity: "Valid until 31 December 2026",
+
+    certificate_yerzhan_name: "Yerzhan Uzakbayev",
+    certificate_yerzhan_role: "MAIG, AIG member No. 5769",
+    certificate_yerzhan_validity: "Membership certificate 2022/2023",
+
+    certificate_asylbek_name: "Assylbek Aukhadiev",
+    certificate_asylbek_role: "MAIG, AIG member No. 8707",
+    certificate_asylbek_validity: "Membership certificate 2024/2025",
+
     faq_subtitle: "Answers to frequently asked questions.",
     faq1_title: "What areas do you work with?",
     faq1_text: "We support projects related to exploration and mining of solid minerals, common minerals and artisanal mining, as well as engineering, reporting, environmental and industrial safety documentation.",
@@ -290,9 +353,9 @@ const i18n = {
     faq3_text: "Pricing depends on the project stage, scope of work, completeness of source data and the number of required documents.",
     faq4_title: "Do you handle custom tasks?",
     faq4_text: "Yes. We work both with standard services and non-standard tasks within subsoil use support and project documentation.",
-     
+
     footer_phone: "+7 705 384 6999",
-    footer_country: "Kazakhstan, Karaganda"  
+    footer_country: "Kazakhstan, Karaganda"
   }
 };
 
@@ -309,63 +372,89 @@ function setFormStatus(type, text) {
   formStatus.textContent = text;
   formStatus.classList.remove("is-success", "is-error", "is-visible");
 
-  if (type === "success") formStatus.classList.add("is-success");
-  if (type === "error") formStatus.classList.add("is-error");
-  if (text) formStatus.classList.add("is-visible");
+  if (type === "success") {
+    formStatus.classList.add("is-success");
+  }
+
+  if (type === "error") {
+    formStatus.classList.add("is-error");
+  }
+
+  if (text) {
+    formStatus.classList.add("is-visible");
+  }
 }
 
 function resetSubmitButton() {
   if (!leadSubmitBtn) return;
+
   leadSubmitBtn.disabled = false;
   leadSubmitBtn.classList.remove("is-loading", "is-success");
   leadSubmitBtn.textContent = i18n[currentLang].form_submit;
 }
 
 function applyLanguage(lang) {
+  if (!i18n[lang]) return;
+
   currentLang = lang;
   document.documentElement.lang = lang;
 
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.dataset.i18n;
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+
     if (!(key in i18n[lang])) return;
 
-    if (el.tagName === "OPTION") {
-      el.textContent = i18n[lang][key];
+    if (element.tagName === "OPTION") {
+      element.textContent = i18n[lang][key];
     } else {
-      el.innerHTML = i18n[lang][key];
+      element.innerHTML = i18n[lang][key];
     }
   });
 
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-    const key = el.dataset.i18nPlaceholder;
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+
     if (!(key in i18n[lang])) return;
-    el.placeholder = i18n[lang][key];
+
+    element.placeholder = i18n[lang][key];
   });
 
-  document.getElementById("btnRu").classList.toggle("is-active", lang === "ru");
-  document.getElementById("btnKz").classList.toggle("is-active", lang === "kz");
-  document.getElementById("btnEn").classList.toggle("is-active", lang === "en");
+  document.getElementById("btnRu")?.classList.toggle("is-active", lang === "ru");
+  document.getElementById("btnKz")?.classList.toggle("is-active", lang === "kz");
+  document.getElementById("btnEn")?.classList.toggle("is-active", lang === "en");
 
-  if (leadSubmitBtn && !leadSubmitBtn.classList.contains("is-loading") && !leadSubmitBtn.classList.contains("is-success")) {
+  if (
+    leadSubmitBtn &&
+    !leadSubmitBtn.classList.contains("is-loading") &&
+    !leadSubmitBtn.classList.contains("is-success")
+  ) {
     leadSubmitBtn.textContent = i18n[lang].form_submit;
   }
 
-  if (formStatus && formStatus.classList.contains("is-error")) {
+  if (formStatus?.classList.contains("is-error")) {
     formStatus.textContent = i18n[lang].form_status_error;
   }
 
-  if (leadSubmitBtn && leadSubmitBtn.classList.contains("is-success")) {
+  if (leadSubmitBtn?.classList.contains("is-success")) {
     leadSubmitBtn.textContent = i18n[lang].form_submit_success;
   }
 }
 
-document.getElementById("btnRu").addEventListener("click", () => applyLanguage("ru"));
-document.getElementById("btnKz").addEventListener("click", () => applyLanguage("kz"));
-document.getElementById("btnEn").addEventListener("click", () => applyLanguage("en"));
+document.getElementById("btnRu")?.addEventListener("click", () => {
+  applyLanguage("ru");
+});
+
+document.getElementById("btnKz")?.addEventListener("click", () => {
+  applyLanguage("kz");
+});
+
+document.getElementById("btnEn")?.addEventListener("click", () => {
+  applyLanguage("en");
+});
 
 if (leadForm) {
-  leadForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
+  leadForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
     if (!leadSubmitBtn) return;
 
@@ -375,15 +464,21 @@ if (leadForm) {
     }
 
     setFormStatus("", "");
+
     leadSubmitBtn.disabled = true;
     leadSubmitBtn.classList.remove("is-success");
     leadSubmitBtn.classList.add("is-loading");
     leadSubmitBtn.textContent = i18n[currentLang].form_submit_loading;
 
     try {
-      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, leadForm);
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        leadForm
+      );
 
       leadForm.reset();
+
       leadSubmitBtn.classList.remove("is-loading");
       leadSubmitBtn.classList.add("is-success");
       leadSubmitBtn.textContent = i18n[currentLang].form_submit_success;
@@ -391,9 +486,14 @@ if (leadForm) {
       formSuccessTimer = setTimeout(() => {
         resetSubmitButton();
       }, 2000);
-    } catch (err) {
-      console.error(err);
-      setFormStatus("error", i18n[currentLang].form_status_error);
+    } catch (error) {
+      console.error(error);
+
+      setFormStatus(
+        "error",
+        i18n[currentLang].form_status_error
+      );
+
       resetSubmitButton();
     }
   });
@@ -401,150 +501,514 @@ if (leadForm) {
 
 applyLanguage("ru");
 
+/* ---------- CERTIFICATE MODAL ---------- */
+
+(function initCertificateModal() {
+  const modal = document.getElementById("certificateModal");
+  const modalImage = document.getElementById("certificateModalImage");
+  const modalTitle = document.getElementById("certificateModalTitle");
+  const previewButtons = document.querySelectorAll("[data-certificate-src]");
+  const closeButtons = document.querySelectorAll("[data-certificate-close]");
+
+  if (
+    !modal ||
+    !modalImage ||
+    !modalTitle ||
+    !previewButtons.length
+  ) {
+    return;
+  }
+
+  let lastFocusedElement = null;
+
+  function openCertificate(button) {
+    const source = button.dataset.certificateSrc;
+
+    const cardTitle = button
+      .closest(".certificate-card")
+      ?.querySelector("h3")
+      ?.textContent
+      ?.trim();
+
+    const title =
+      cardTitle ||
+      button.dataset.certificateName ||
+      "";
+
+    if (!source) return;
+
+    lastFocusedElement = document.activeElement;
+
+    modalImage.src = source;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("is-modal-open");
+
+    modal
+      .querySelector(".certificate-modal__close")
+      ?.focus();
+  }
+
+  function closeCertificate() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+
+    document.body.classList.remove("is-modal-open");
+
+    modalImage.removeAttribute("src");
+    modalImage.alt = "";
+    modalTitle.textContent = "";
+
+    lastFocusedElement?.focus?.();
+  }
+
+  previewButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      openCertificate(button);
+    });
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeCertificate);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      modal.classList.contains("is-open")
+    ) {
+      closeCertificate();
+    }
+  });
+})();
+
 /* ---------- CANVAS GEO BACKGROUND ---------- */
 
 (function initGeoBackground() {
   const canvas = document.getElementById("geoCanvas");
+
   if (!canvas) return;
 
-  const ctx = canvas.getContext("2d");
-  let dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const context = canvas.getContext("2d");
+
+  if (!context) return;
+
+  let devicePixelRatio = Math.min(
+    window.devicePixelRatio || 1,
+    2
+  );
 
   let width = 0;
   let height = 0;
   let time = 0;
 
   const cellSize = 20;
+
   const levels = [
-    -0.65, -0.52, -0.40, -0.30, -0.22, -0.15,
-    -0.08, 0,
-    0.08, 0.15, 0.22, 0.30, 0.40, 0.52, 0.65
+    -0.65,
+    -0.52,
+    -0.40,
+    -0.30,
+    -0.22,
+    -0.15,
+    -0.08,
+    0,
+    0.08,
+    0.15,
+    0.22,
+    0.30,
+    0.40,
+    0.52,
+    0.65
   ];
 
   function resize() {
-    const rect = canvas.getBoundingClientRect();
-    width = Math.floor(rect.width);
-    height = Math.floor(rect.height);
+    const rectangle = canvas.getBoundingClientRect();
 
-    canvas.width = Math.floor(width * dpr);
-    canvas.height = Math.floor(height * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    width = Math.floor(rectangle.width);
+    height = Math.floor(rectangle.height);
 
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
-    ctx.imageSmoothingEnabled = true;
-    ctx.imageSmoothingQuality = "high";
+    devicePixelRatio = Math.min(
+      window.devicePixelRatio || 1,
+      2
+    );
+
+    canvas.width = Math.floor(
+      width * devicePixelRatio
+    );
+
+    canvas.height = Math.floor(
+      height * devicePixelRatio
+    );
+
+    context.setTransform(
+      devicePixelRatio,
+      0,
+      0,
+      devicePixelRatio,
+      0,
+      0
+    );
+
+    context.lineJoin = "round";
+    context.lineCap = "round";
+    context.imageSmoothingEnabled = true;
+    context.imageSmoothingQuality = "high";
   }
 
-  function field(x, y, t) {
-    const nx = x / width;
-    const ny = y / height;
+  function field(x, y, currentTime) {
+    const normalizedX = x / width;
+    const normalizedY = y / height;
 
-    const cx1 = 0.28 + Math.sin(t * 0.23) * 0.04;
-    const cy1 = 0.32 + Math.cos(t * 0.19) * 0.03;
+    const centerX1 =
+      0.28 +
+      Math.sin(currentTime * 0.23) * 0.04;
 
-    const cx2 = 0.68 + Math.cos(t * 0.17) * 0.05;
-    const cy2 = 0.42 + Math.sin(t * 0.21) * 0.04;
+    const centerY1 =
+      0.32 +
+      Math.cos(currentTime * 0.19) * 0.03;
 
-    const cx3 = 0.52 + Math.sin(t * 0.14) * 0.03;
-    const cy3 = 0.72 + Math.cos(t * 0.16) * 0.03;
+    const centerX2 =
+      0.68 +
+      Math.cos(currentTime * 0.17) * 0.05;
 
-    const d1 = Math.exp(-(((nx - cx1) ** 2) / 0.020 + ((ny - cy1) ** 2) / 0.030));
-    const d2 = Math.exp(-(((nx - cx2) ** 2) / 0.028 + ((ny - cy2) ** 2) / 0.022));
-    const d3 = Math.exp(-(((nx - cx3) ** 2) / 0.040 + ((ny - cy3) ** 2) / 0.026));
+    const centerY2 =
+      0.42 +
+      Math.sin(currentTime * 0.21) * 0.04;
+
+    const centerX3 =
+      0.52 +
+      Math.sin(currentTime * 0.14) * 0.03;
+
+    const centerY3 =
+      0.72 +
+      Math.cos(currentTime * 0.16) * 0.03;
+
+    const density1 = Math.exp(
+      -(
+        ((normalizedX - centerX1) ** 2) / 0.020 +
+        ((normalizedY - centerY1) ** 2) / 0.030
+      )
+    );
+
+    const density2 = Math.exp(
+      -(
+        ((normalizedX - centerX2) ** 2) / 0.028 +
+        ((normalizedY - centerY2) ** 2) / 0.022
+      )
+    );
+
+    const density3 = Math.exp(
+      -(
+        ((normalizedX - centerX3) ** 2) / 0.040 +
+        ((normalizedY - centerY3) ** 2) / 0.026
+      )
+    );
 
     const ridge =
-      Math.sin(nx * 10 + t * 0.15) * 0.08 +
-      Math.cos(ny * 9 - t * 0.12) * 0.08 +
-      Math.sin((nx + ny) * 12 + t * 0.10) * 0.05;
+      Math.sin(
+        normalizedX * 10 +
+        currentTime * 0.15
+      ) *
+        0.08 +
+      Math.cos(
+        normalizedY * 9 -
+        currentTime * 0.12
+      ) *
+        0.08 +
+      Math.sin(
+        (normalizedX + normalizedY) * 12 +
+        currentTime * 0.10
+      ) *
+        0.05;
 
-    return d1 * 1.0 - d2 * 0.9 + d3 * 0.75 + ridge;
+    return (
+      density1 * 1.0 -
+      density2 * 0.9 +
+      density3 * 0.75 +
+      ridge
+    );
   }
 
-  function interp(p1, p2, v1, v2, level) {
-    const t = (level - v1) / (v2 - v1 || 1e-6);
+  function interpolate(
+    point1,
+    point2,
+    value1,
+    value2,
+    level
+  ) {
+    const interpolation =
+      (level - value1) /
+      (value2 - value1 || 0.000001);
+
     return {
-      x: p1.x + (p2.x - p1.x) * t,
-      y: p1.y + (p2.y - p1.y) * t
+      x:
+        point1.x +
+        (point2.x - point1.x) *
+          interpolation,
+
+      y:
+        point1.y +
+        (point2.y - point1.y) *
+          interpolation
     };
   }
 
   function drawContours() {
-    const cols = Math.ceil(width / cellSize) + 1;
-    const rows = Math.ceil(height / cellSize) + 1;
+    const columns =
+      Math.ceil(width / cellSize) + 1;
 
-    const values = Array.from({ length: rows }, () => Array(cols).fill(0));
+    const rows =
+      Math.ceil(height / cellSize) + 1;
 
-    for (let j = 0; j < rows; j++) {
-      for (let i = 0; i < cols; i++) {
-        values[j][i] = field(i * cellSize, j * cellSize, time);
+    const values = Array.from(
+      { length: rows },
+      () => Array(columns).fill(0)
+    );
+
+    for (let row = 0; row < rows; row += 1) {
+      for (
+        let column = 0;
+        column < columns;
+        column += 1
+      ) {
+        values[row][column] = field(
+          column * cellSize,
+          row * cellSize,
+          time
+        );
       }
     }
 
     for (const level of levels) {
-      ctx.beginPath();
+      context.beginPath();
 
-      for (let j = 0; j < rows - 1; j++) {
-        for (let i = 0; i < cols - 1; i++) {
-          const x = i * cellSize;
-          const y = j * cellSize;
+      for (
+        let row = 0;
+        row < rows - 1;
+        row += 1
+      ) {
+        for (
+          let column = 0;
+          column < columns - 1;
+          column += 1
+        ) {
+          const x = column * cellSize;
+          const y = row * cellSize;
 
-          const p0 = { x, y };
-          const p1 = { x: x + cellSize, y };
-          const p2 = { x: x + cellSize, y: y + cellSize };
-          const p3 = { x, y: y + cellSize };
+          const point0 = {
+            x,
+            y
+          };
 
-          const v0 = values[j][i];
-          const v1 = values[j][i + 1];
-          const v2 = values[j + 1][i + 1];
-          const v3 = values[j + 1][i];
+          const point1 = {
+            x: x + cellSize,
+            y
+          };
 
-          const pts = [];
+          const point2 = {
+            x: x + cellSize,
+            y: y + cellSize
+          };
 
-          if ((v0 < level) !== (v1 < level)) pts.push(interp(p0, p1, v0, v1, level));
-          if ((v1 < level) !== (v2 < level)) pts.push(interp(p1, p2, v1, v2, level));
-          if ((v2 < level) !== (v3 < level)) pts.push(interp(p2, p3, v2, v3, level));
-          if ((v3 < level) !== (v0 < level)) pts.push(interp(p3, p0, v3, v0, level));
+          const point3 = {
+            x,
+            y: y + cellSize
+          };
 
-          if (pts.length === 2) {
-            ctx.moveTo(pts[0].x, pts[0].y);
-            ctx.lineTo(pts[1].x, pts[1].y);
-          } else if (pts.length === 4) {
-            ctx.moveTo(pts[0].x, pts[0].y);
-            ctx.lineTo(pts[1].x, pts[1].y);
-            ctx.moveTo(pts[2].x, pts[2].y);
-            ctx.lineTo(pts[3].x, pts[3].y);
+          const value0 =
+            values[row][column];
+
+          const value1 =
+            values[row][column + 1];
+
+          const value2 =
+            values[row + 1][column + 1];
+
+          const value3 =
+            values[row + 1][column];
+
+          const points = [];
+
+          if (
+            (value0 < level) !==
+            (value1 < level)
+          ) {
+            points.push(
+              interpolate(
+                point0,
+                point1,
+                value0,
+                value1,
+                level
+              )
+            );
+          }
+
+          if (
+            (value1 < level) !==
+            (value2 < level)
+          ) {
+            points.push(
+              interpolate(
+                point1,
+                point2,
+                value1,
+                value2,
+                level
+              )
+            );
+          }
+
+          if (
+            (value2 < level) !==
+            (value3 < level)
+          ) {
+            points.push(
+              interpolate(
+                point2,
+                point3,
+                value2,
+                value3,
+                level
+              )
+            );
+          }
+
+          if (
+            (value3 < level) !==
+            (value0 < level)
+          ) {
+            points.push(
+              interpolate(
+                point3,
+                point0,
+                value3,
+                value0,
+                level
+              )
+            );
+          }
+
+          if (points.length === 2) {
+            context.moveTo(
+              points[0].x,
+              points[0].y
+            );
+
+            context.lineTo(
+              points[1].x,
+              points[1].y
+            );
+          } else if (points.length === 4) {
+            context.moveTo(
+              points[0].x,
+              points[0].y
+            );
+
+            context.lineTo(
+              points[1].x,
+              points[1].y
+            );
+
+            context.moveTo(
+              points[2].x,
+              points[2].y
+            );
+
+            context.lineTo(
+              points[3].x,
+              points[3].y
+            );
           }
         }
       }
 
-      const alpha = 0.040 + (level + 0.65) * 0.040;
-      ctx.strokeStyle = `rgba(225, 220, 205, ${alpha})`;
-      ctx.lineWidth = Math.abs(level) < 0.01 ? 1.5 : 1.2;
-      ctx.stroke();
+      const alpha =
+        0.040 +
+        (level + 0.65) * 0.040;
+
+      context.strokeStyle =
+        `rgba(225, 220, 205, ${alpha})`;
+
+      context.lineWidth =
+        Math.abs(level) < 0.01
+          ? 1.5
+          : 1.2;
+
+      context.stroke();
     }
   }
 
   function drawBand() {
-    const g = ctx.createLinearGradient(0, 0, width, 0);
-    g.addColorStop(0, "rgba(0,0,0,0)");
-    g.addColorStop(0.18, "rgba(8,32,78,0.06)");
-    g.addColorStop(0.50, "rgba(10,36,90,0.12)");
-    g.addColorStop(0.82, "rgba(8,32,78,0.06)");
-    g.addColorStop(1, "rgba(0,0,0,0)");
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, width, height);
+    const gradient =
+      context.createLinearGradient(
+        0,
+        0,
+        width,
+        0
+      );
+
+    gradient.addColorStop(
+      0,
+      "rgba(0,0,0,0)"
+    );
+
+    gradient.addColorStop(
+      0.18,
+      "rgba(8,32,78,0.06)"
+    );
+
+    gradient.addColorStop(
+      0.50,
+      "rgba(10,36,90,0.12)"
+    );
+
+    gradient.addColorStop(
+      0.82,
+      "rgba(8,32,78,0.06)"
+    );
+
+    gradient.addColorStop(
+      1,
+      "rgba(0,0,0,0)"
+    );
+
+    context.fillStyle = gradient;
+
+    context.fillRect(
+      0,
+      0,
+      width,
+      height
+    );
   }
 
   function render() {
     time += 0.012;
-    ctx.clearRect(0, 0, width, height);
+
+    context.clearRect(
+      0,
+      0,
+      width,
+      height
+    );
+
     drawBand();
     drawContours();
+
     requestAnimationFrame(render);
   }
 
-  window.addEventListener("resize", resize);
+  window.addEventListener(
+    "resize",
+    resize
+  );
+
   resize();
   render();
 })();

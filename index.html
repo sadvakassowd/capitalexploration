@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="stylesheet" href="styles.css?v=32" />
+  <link rel="stylesheet" href="styles.css?v=34" />
 </head>
 <body>
 
@@ -34,6 +34,7 @@
       <a href="#services" data-i18n="nav_services">Услуги</a>
       <a href="#about" data-i18n="nav_about">О компании</a>
       <a href="#team" data-i18n="nav_team">О команде</a>
+      <a href="#certificates" data-i18n="nav_certificates">Сертификаты</a>
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
     </nav>
 
@@ -214,7 +215,86 @@
     </div>
   </section>
 
-  <section class="section section--alt" id="faq">
+
+  <section class="section section--alt" id="certificates">
+    <div class="container">
+      <div class="section__head certificates-head">
+        <div>
+          <h2 class="h2" data-i18n="certificates_title">Компетентные лица</h2>
+          <p class="muted certificates-intro" data-i18n="certificates_subtitle">Квалификация специалистов подтверждена членством в профессиональных геологических ассоциациях CIG и AIG.</p>
+        </div>
+      </div>
+
+      <div class="certificate-grid">
+        <article class="certificate-card">
+          <button class="certificate-preview" type="button" data-certificate-src="certificates/zhanat-tuleubayev-cig.jpg" data-certificate-name="Жанат Тулеубаев" aria-label="Открыть сертификат Жаната Тулеубаева">
+            <img src="certificates/zhanat-tuleubayev-cig.jpg" alt="Сертификат CIG Жаната Тулеубаева" loading="lazy">
+            <span class="certificate-preview__overlay" data-i18n="certificate_view">Посмотреть сертификат</span>
+          </button>
+          <div class="certificate-card__body">
+            <span class="certificate-badge">CIG</span>
+            <h3 data-i18n="certificate_zhanat_name">Жанат Тулеубаев</h3>
+            <p data-i18n="certificate_zhanat_role">Fellow CIG, член №0129</p>
+            <span class="certificate-validity" data-i18n="certificate_zhanat_validity">Действителен до 31 декабря 2026 года</span>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <button class="certificate-preview" type="button" data-certificate-src="certificates/dias-zhabayev-cig.jpg" data-certificate-name="Диас Жабаев" aria-label="Открыть сертификат Диаса Жабаева">
+            <img src="certificates/dias-zhabayev-cig.jpg" alt="Сертификат CIG Диаса Жабаева" loading="lazy">
+            <span class="certificate-preview__overlay" data-i18n="certificate_view">Посмотреть сертификат</span>
+          </button>
+          <div class="certificate-card__body">
+            <span class="certificate-badge">CIG</span>
+            <h3 data-i18n="certificate_dias_name">Диас Жабаев</h3>
+            <p data-i18n="certificate_dias_role">Fellow CIG, член №0100</p>
+            <span class="certificate-validity" data-i18n="certificate_dias_validity">Действителен до 31 декабря 2026 года</span>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <button class="certificate-preview" type="button" data-certificate-src="certificates/yerzhan-uzakbayev-aig.jpg" data-certificate-name="Ержан Узакбаев" aria-label="Открыть сертификат Ержана Узакбаева">
+            <img src="certificates/yerzhan-uzakbayev-aig.jpg" alt="Сертификат AIG Ержана Узакбаева" loading="lazy">
+            <span class="certificate-preview__overlay" data-i18n="certificate_view">Посмотреть сертификат</span>
+          </button>
+          <div class="certificate-card__body">
+            <span class="certificate-badge certificate-badge--aig">AIG / JORC</span>
+            <h3 data-i18n="certificate_yerzhan_name">Ержан Узакбаев</h3>
+            <p data-i18n="certificate_yerzhan_role">MAIG, член AIG №5769</p>
+            <span class="certificate-validity" data-i18n="certificate_yerzhan_validity">Сертификат членства 2022/2023</span>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <button class="certificate-preview" type="button" data-certificate-src="certificates/asylbek-aukhadiyev-aig.jpg" data-certificate-name="Асылбек Аухадиев" aria-label="Открыть сертификат Асылбека Аухадиева">
+            <img src="certificates/asylbek-aukhadiyev-aig.jpg" alt="Сертификат AIG Асылбека Аухадиева" loading="lazy">
+            <span class="certificate-preview__overlay" data-i18n="certificate_view">Посмотреть сертификат</span>
+          </button>
+          <div class="certificate-card__body">
+            <span class="certificate-badge certificate-badge--aig">AIG / JORC</span>
+            <h3 data-i18n="certificate_asylbek_name">Асылбек Аухадиев</h3>
+            <p data-i18n="certificate_asylbek_role">MAIG, член AIG №8707</p>
+            <span class="certificate-validity" data-i18n="certificate_asylbek_validity">Сертификат членства 2024/2025</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="certificate-modal" id="certificateModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle">
+    <button class="certificate-modal__backdrop" type="button" data-certificate-close aria-label="Закрыть"></button>
+    <div class="certificate-modal__dialog">
+      <div class="certificate-modal__top">
+        <div class="certificate-modal__title" id="certificateModalTitle"></div>
+        <button class="certificate-modal__close" type="button" data-certificate-close aria-label="Закрыть">×</button>
+      </div>
+      <div class="certificate-modal__content">
+        <img id="certificateModalImage" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="faq">
     <div class="container">
       <div class="section__head">
         <h2 class="h2">FAQ</h2>
@@ -274,6 +354,6 @@
     }
   });
 </script>
-<script src="app.js?v=32"></script>
+<script src="app.js?v=34"></script>
 </body>
 </html>
